@@ -1,0 +1,16 @@
+->Express: Express is a minimal and flexible web framework for Node.js that helps developers build server-side applications efficiently. It provides:
+· Routing: For handling requests (GET, POST, etc.) and defining endpoints.
+· Middleware: To process requests and responses (e.g., authentication,logging).
+· Scalability: Lightweight and easily extendable.
+It's widely used for creating APls and web applications due to its simplicity and
+rich ecosystem of plugins.
+
+------------------------------------------------------------------------------------------
+
+->Dotenv: The dotenv package is a Node.js library that allows you to manage environment variables efficiently. It reads a .env file in your project and loads the variables into process.env, making them accessible in your application.
+Key Features:
+· Security: Keeps sensitive data like API keys, database credentials, and secret tokens out of the source code.
+· Ease of use: Simplifies configuration for different environments (development, testing, production).
+· Lightweight: Adds minimal overhead to your project.
+
+------------------------------------------------------------------------------------------
