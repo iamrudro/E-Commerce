@@ -58,7 +58,7 @@ https://www.postman.com/downloads/
 - Inside *backend* folder create a folder named *models*
 - Then inside *models* folders create ***```productModel.js```***
 
-### **Git Push #9 | **
+### **Git Push #9 | Creating Products API and Testing with Postman**
 
 ### **Git Push #10 | **
 
