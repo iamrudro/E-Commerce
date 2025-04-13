@@ -54,7 +54,9 @@ https://www.postman.com/downloads/
 - Create a file named ***```db.js```*** inside ***```\backend\config```***
 - Install ```npm i mongoose```
 
-### **Git Push #8 | **
+### **Git Push #8 | Building a Product Schema in MongoDB with Mongoose**
+- Inside *backend* folder create a folder named *models*
+- Then inside *models* folders create ***```productModel.js```***
 
 ### **Git Push #9 | **
 
