@@ -50,7 +50,9 @@ https://www.postman.com/downloads/
     * And also inside ***```controller```*** folder create ***```productController.js```***
 
 
-### **Git Push #7 | **
+### **Git Push #7 | Connecting Website to MongoDB for Seamless Data Management**
+- Create a file named ***```db.js```*** inside ***```\backend\config```***
+- Install ```npm i mongoose```
 
 ### **Git Push #8 | **
 
