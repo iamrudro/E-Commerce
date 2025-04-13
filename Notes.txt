@@ -14,3 +14,10 @@ Key Features:
 · Lightweight: Adds minimal overhead to your project.
 
 ------------------------------------------------------------------------------------------
+
+->Mongoose: Mongoose is an ODM (Object Data Modeling) library for MongoDB and Node.js. It simplifies working with MongoDB by providing:
+· Schema-based modeling: Define the structure of your documents in the
+database.
+· Data validation: Enforce rules for the data before saving.
+· Query building: Easily interact with the database using methods instead of raw queries.
+------------------------------------------------------------------------------------------
