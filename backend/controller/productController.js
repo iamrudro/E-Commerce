@@ -24,8 +24,12 @@ export const getAllProducts = async (req, res) => {
 
 // 3.Update Product
 export const updateProduct = async (req, res) => {
+    const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
+        new: true,
+        runValidators: true
+    })
     // console.log(req.params.id);
-    let product = await Product.findById(req.params.id);
+    // let product = await Product.findById(req.params.id);
     // console.log(product);
     if (!product) {
         return res.status(500).json({
@@ -33,11 +37,6 @@ export const updateProduct = async (req, res) => {
             message: "Product is not found"
         })
     }
-    product = await Product.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
-        runValidators: true
-    })
-
     res.status(200).json({
         success: true,
         product
@@ -46,14 +45,14 @@ export const updateProduct = async (req, res) => {
 
 // 4.Delete Product
 export const deleteProduct = async (req, res) => {
-    let product = await Product.findById(req.params.id);
+    const product = await Product.findByIdAndDelete(req.params.id)
+    // let product = await Product.findById(req.params.id);
     if (!product) {
         return res.status(500).json({
             success: false,
             message: "Product is not found"
         })
     }
-    product = await Product.findByIdAndDelete(req.params.id)
     res.status(200).json({
         success: true,
         message: "Product is deleted Successfully"
@@ -61,14 +60,17 @@ export const deleteProduct = async (req, res) => {
 }
 
 
-
-
-
-
-
-
-// export const getSingleProduct = (req, res) => {
-//     res.status(200).json({
-//         message: "Single Product"
-//     })
-// }
+// 5. Accessing Single Product
+export const getSingleProduct = async (req, res) => {
+    const product = await Product.findById(req.params.id);
+    if (!product) {
+        return res.status(500).json({
+            success: false,
+            message: "Product is not found"
+        })
+    }
+    res.status(200).json({
+        success: true,
+        product
+    })
+}
