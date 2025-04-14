@@ -64,7 +64,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #11 | Updating Existing Product in MongoDB and Testing with Postman**
 
-### **Git Push #12 | **
+### **Git Push #12 | Deleting Existing Product from MongoDB and Testing with Postman**
 
 ### **Git Push #13 | **
 
