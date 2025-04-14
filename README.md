@@ -62,7 +62,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #10 | Fetching All Products from MongoDB**
 
-### **Git Push #11 | **
+### **Git Push #11 | Updating Existing Product in MongoDB and Testing with Postman**
 
 ### **Git Push #12 | **
 
