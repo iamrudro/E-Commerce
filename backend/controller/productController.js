@@ -12,8 +12,6 @@ export const createProducts = async (req, res) => {
 
 
 // 2.Getting All Products
-
-
 export const getAllProducts = async (req, res) => {
     const products = await Product.find()
     res.status(200).json({
@@ -35,7 +33,6 @@ export const updateProduct = async (req, res) => {
             message: "Product is not found"
         })
     }
-
     product = await Product.findByIdAndUpdate(req.params.id, req.body, {
         new: true,
         runValidators: true
@@ -44,6 +41,22 @@ export const updateProduct = async (req, res) => {
     res.status(200).json({
         success: true,
         product
+    })
+}
+
+// 4.Delete Product
+export const deleteProduct = async (req, res) => {
+    let product = await Product.findById(req.params.id);
+    if (!product) {
+        return res.status(500).json({
+            success: false,
+            message: "Product is not found"
+        })
+    }
+    product = await Product.findByIdAndDelete(req.params.id)
+    res.status(200).json({
+        success: true,
+        message: "Product is deleted Successfully"
     })
 }
 
