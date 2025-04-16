@@ -79,7 +79,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #16 | Handle Promise Rejection Errors**
 
-### **Git Push #17 | **
+### **Git Push #17 | Handle Backend Uncaught Exception Errors**
 
 ### **Git Push #18 | **
 
