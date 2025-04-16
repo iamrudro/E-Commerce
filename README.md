@@ -77,7 +77,7 @@ https://www.postman.com/downloads/
 ### **Git Push #15 | Backend-Handling Validation Errors**
 - Inside *middleware* folder create a file named ***```handleAsyncError.js```***
 
-### **Git Push #16 | **
+### **Git Push #16 | Handle Promise Rejection Errors**
 
 ### **Git Push #17 | **
 

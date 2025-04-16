@@ -7,7 +7,14 @@ connectMongoDataBase();
 const port = process.env.PORT || 3000;
 
 // console.log(app);
-app.listen(port, () => {
+const server = app.listen(port, () => {
     console.log(`Server is running on the PORT ${port}`)
 })
 
+process.on('unhandledRejection', (err) => {
+    console.log(`Error:${err.message}`);
+    console.log(`Server is shutting down, due to unhandled promise rejection`);
+    server.close(() => {
+        process.exit(1)
+    })
+})
