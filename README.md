@@ -114,9 +114,9 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 21 to 30</summary>
 
-### **Git Push #21 | **
+### **Git Push #21 | Pagination Functionality - Part 1**
 
-### **Git Push #22 | **
+### **Git Push #22 | Pagination Functionality - Part 2**
 
 ### **Git Push #23 | **
 
