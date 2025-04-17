@@ -118,7 +118,9 @@ https://www.postman.com/downloads/
 
 ### **Git Push #22 | Pagination Functionality - Part 2**
 
-### **Git Push #23 | **
+### **Git Push #23 | Working on User Authentication - Creating User Schema**
+- Inside *models* folders create ***```userModel.js```***
+- Install ```npm i validator```
 
 ### **Git Push #24 | **
 
