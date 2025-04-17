@@ -129,7 +129,8 @@ https://www.postman.com/downloads/
 ### **Git Push #25 | Password Hashing using Bcryptjs**
 - Install ```npm i bcryptjs```
 
-### **Git Push #26 | **
+### **Git Push #26 | JSON Web Token (JWT)**
+- Install ```npm i jsonwebtoken```
 
 ### **Git Push #27 | **
 
