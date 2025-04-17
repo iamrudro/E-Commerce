@@ -1,4 +1,17 @@
-# MERN Stack E-Commerce Application
+<p align="center">
+  <img src="https://your-image-url.com/logo.png" width="150" alt="E-Commerce Logo">
+</p>
+
+<h1 align="center">MERN E-Commerce Application</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Current%20Version-1.0.0-brightgreen">
+  <img src="https://img.shields.io/badge/Made%20in-Python3-blue">
+  <img src="https://img.shields.io/badge/License-GPL%20v3-yellow">
+  <img src="https://img.shields.io/badge/Run%20Tests-passing-brightgreen">
+  <img src="https://img.shields.io/badge/lines%20of%20code-1.5K-pink">
+</p>
+
 
 *Create and Clone the GitHub Repository*
 
@@ -68,6 +81,7 @@ https://www.postman.com/downloads/
 
 <details>
 <summary>Git Push to 11 to 20</summary>
+
 ### **Git Push #11 | Updating Existing Product in MongoDB and Testing with Postman**
 
 ### **Git Push #12 | Deleting Existing Product from MongoDB and Testing with Postman**
@@ -99,6 +113,7 @@ https://www.postman.com/downloads/
 
 <details>
 <summary>Git Push to 21 to 30</summary>
+
 ### **Git Push #21 | **
 
 ### **Git Push #22 | **
@@ -118,5 +133,30 @@ https://www.postman.com/downloads/
 ### **Git Push #29 | **
 
 ### **Git Push #30 | **
+
+</details>
+
+<details>
+<summary>Git Push to 21 to 30</summary>
+
+### **Git Push #31 | **
+
+### **Git Push #32 | **
+
+### **Git Push #33 | **
+
+### **Git Push #34 | **
+
+### **Git Push #35 | **
+
+### **Git Push #36 | **
+
+### **Git Push #37 | **
+
+### **Git Push #38 | **
+
+### **Git Push #39 | **
+
+### **Git Push #40 | **
 
 </details>
