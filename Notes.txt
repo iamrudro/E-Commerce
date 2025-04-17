@@ -21,3 +21,7 @@ database.
 · Data validation: Enforce rules for the data before saving.
 · Query building: Easily interact with the database using methods instead of raw queries.
 ------------------------------------------------------------------------------------------
+
+->validator : The validator package is a popular JavaScript library used for data validation and sanitization in Node.js. It provides a collection of robust, pre-built validation and sanitization functions for common use cases, such as validating email addresses, URLs, and much more.
+
+------------------------------------------------------------------------------------------
