@@ -33,3 +33,6 @@ Hashed Password --> $2b$10$e2F3G6x.jNJ75hq17v42POxX5e4uAa7jmsHQdkBvSYOhE3m9xF8m6
 
 ------------------------------------------------------------------------------------------
 
+->JWT-JSON Web Token: It is used to securely transfer information between two parties (e.g., a client and a server) in a compact, verifiable format. Its primary purposes are authentication, authorization, and information exchange.
+
+------------------------------------------------------------------------------------------
