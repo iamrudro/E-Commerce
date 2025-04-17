@@ -87,4 +87,24 @@ https://www.postman.com/downloads/
 - Inside *utils* folder create a file named ***```apiFunctionality.js```***
 - This file is created if we want to do searching or filtering or if we want to apply pagination.
 
-### **Git Push #20 | **
+### **Git Push #20 | Category Filter Functionality**
+
+### **Git Push #21 | **
+
+### **Git Push #22 | **
+
+### **Git Push #23 | **
+
+### **Git Push #24 | **
+
+### **Git Push #25 | **
+
+### **Git Push #26 | **
+
+### **Git Push #27 | **
+
+### **Git Push #28 | **
+
+### **Git Push #29 | **
+
+### **Git Push #30 | **
