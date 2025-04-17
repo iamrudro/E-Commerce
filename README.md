@@ -132,7 +132,7 @@ https://www.postman.com/downloads/
 ### **Git Push #26 | JSON Web Token (JWT)**
 - Install ```npm i jsonwebtoken```
 
-### **Git Push #27 | **
+### **Git Push #27 | MongoDB Duplicate Key Error**
 
 ### **Git Push #28 | **
 
