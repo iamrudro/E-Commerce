@@ -126,7 +126,8 @@ https://www.postman.com/downloads/
 - Inside ***```controller```*** folder create ***```userController.js```***
 - Inside ***```routes```*** folder create ***```userRoutes.js```***
 
-### **Git Push #25 | **
+### **Git Push #25 | Password Hashing using Bcryptjs**
+- Install ```npm i bcryptjs```
 
 ### **Git Push #26 | **
 
