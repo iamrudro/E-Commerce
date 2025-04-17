@@ -83,6 +83,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #18 | Handle MongoDB Errors**
 
-### **Git Push #19 | **
+### **Git Push #19 | Search Functionality**
+- Inside *utils* folder create a file named ***```apiFunctionality.js```***
+- This file is created if we want to do searching or filtering or if we want to apply pagination.
 
 ### **Git Push #20 | **
