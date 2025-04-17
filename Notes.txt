@@ -25,3 +25,11 @@ database.
 ->validator : The validator package is a popular JavaScript library used for data validation and sanitization in Node.js. It provides a collection of robust, pre-built validation and sanitization functions for common use cases, such as validating email addresses, URLs, and much more.
 
 ------------------------------------------------------------------------------------------
+
+->bcrypt: is a library in Node.js used for securely hashing and verifying passwords. It is widely used in authentication systems to protect user credentials. The hashing process ensures that even if a database is compromised, the plain-text passwords cannot easily be retrieved.
+
+Password --> 123456789
+Hashed Password --> $2b$10$e2F3G6x.jNJ75hq17v42POxX5e4uAa7jmsHQdkBvSYOhE3m9xF8m6
+
+------------------------------------------------------------------------------------------
+
