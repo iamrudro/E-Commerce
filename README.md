@@ -122,7 +122,9 @@ https://www.postman.com/downloads/
 - Inside *models* folders create ***```userModel.js```***
 - Install ```npm i validator```
 
-### **Git Push #24 | **
+### **Git Push #24 | Register User Functionality**
+- Inside ***```controller```*** folder create ***```userController.js```***
+- Inside ***```routes```*** folder create ***```userRoutes.js```***
 
 ### **Git Push #25 | **
 
