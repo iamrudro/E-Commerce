@@ -136,7 +136,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #28 | Login User Functionality**
 
-### **Git Push #29 | **
+### **Git Push #29 | Verify Password using bcryptjs**
 
 ### **Git Push #30 | **
 
