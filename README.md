@@ -150,7 +150,7 @@ https://www.postman.com/downloads/
 - Install ```npm i cookie-parser```
 - Inside *middleware* folder create a file named ***```userAuth.js```***
 
-### **Git Push #32 | **
+### **Git Push #32 | Logout User Functionality**
 
 ### **Git Push #33 | **
 
