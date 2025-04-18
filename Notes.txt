@@ -36,3 +36,9 @@ Hashed Password --> $2b$10$e2F3G6x.jNJ75hq17v42POxX5e4uAa7jmsHQdkBvSYOhE3m9xF8m6
 ->JWT-JSON Web Token: It is used to securely transfer information between two parties (e.g., a client and a server) in a compact, verifiable format. Its primary purposes are authentication, authorization, and information exchange.
 
 ------------------------------------------------------------------------------------------
+
+->cookie-parser: The cookie-parser middleware is a Node.js package used with Express.js applications to parse cookies attached to incoming HTTP requests. It makes it easier to work with cookies by converting them into an easily accessible object (req.cookies) within the request object.
+Client:Send a request to the server with cookies.
+Server:Uses cookie-parser to parse the cookies.
+--The client sends the cookies , the server is the one that needs cookie-parser to interpret and manage them.
+------------------------------------------------------------------------------------------
