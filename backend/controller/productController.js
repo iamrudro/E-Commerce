@@ -7,7 +7,7 @@ import APIFunctionality from "../utils/apiFunctionality.js";
 // http://localhost:8000/api/v1/product/67fb9a0ebba9a69207d603da?keyword=shirt
 
 
-// 1.Creating Products
+// 1️⃣.Creating Products
 export const createProducts = handleAsyncError(async (req, res, next) => {
     const product = await Product.create(req.body)
     // console.log(req.body);
@@ -18,7 +18,7 @@ export const createProducts = handleAsyncError(async (req, res, next) => {
 })
 
 
-// 2.Getting All Products
+// 2️⃣.Getting All Products
 export const getAllProducts = handleAsyncError(async (req, res, next) => {
     const resultPerPage = 3;
     const apiFeatures = new APIFunctionality(Product.find(), req.query).search().filter();
@@ -55,7 +55,7 @@ export const getAllProducts = handleAsyncError(async (req, res, next) => {
 })
 
 
-// 3.Update Product
+// 3️⃣.Update Product
 export const updateProduct = handleAsyncError(async (req, res, next) => {
     const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
         new: true,
@@ -73,7 +73,7 @@ export const updateProduct = handleAsyncError(async (req, res, next) => {
     })
 })
 
-// 4.Delete Product
+// 4️⃣.Delete Product
 export const deleteProduct = handleAsyncError(async (req, res, next) => {
     const product = await Product.findByIdAndDelete(req.params.id)
     // let product = await Product.findById(req.params.id);
@@ -87,7 +87,7 @@ export const deleteProduct = handleAsyncError(async (req, res, next) => {
 })
 
 
-// 5. Accessing Single Product
+// 5️⃣. Accessing Single Product
 export const getSingleProduct = handleAsyncError(async (req, res, next) => {
     const product = await Product.findById(req.params.id);
     if (!product) {

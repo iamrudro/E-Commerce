@@ -134,7 +134,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #27 | MongoDB Duplicate Key Error**
 
-### **Git Push #28 | **
+### **Git Push #28 | Login User Functionality**
 
 ### **Git Push #29 | **
 
