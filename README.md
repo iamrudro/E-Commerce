@@ -138,7 +138,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #29 | Verify Password using bcryptjs**
 
-### **Git Push #30 | **
+### **Git Push #30 | Setting Cookie and Refactoring Code**
+- Inside *utils* folders create ***```jwtToken.js```***
 
 </details>
 
