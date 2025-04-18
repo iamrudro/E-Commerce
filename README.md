@@ -146,7 +146,9 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 21 to 30</summary>
 
-### **Git Push #31 | **
+### **Git Push #31 | Verifying User Authentication**
+- Install ```npm i cookie-parser```
+- Inside *middleware* folder create a file named ***```userAuth.js```***
 
 ### **Git Push #32 | **
 
@@ -165,5 +167,30 @@ https://www.postman.com/downloads/
 ### **Git Push #39 | **
 
 ### **Git Push #40 | **
+
+</details>
+
+<details>
+<summary>Git Push to 41 to 50</summary>
+
+### **Git Push #41 | ** 
+
+### **Git Push #42 | **
+
+### **Git Push #43 | **
+
+### **Git Push #44 | **
+
+### **Git Push #45 | **
+
+### **Git Push #46 | **
+
+### **Git Push #47 | **
+
+### **Git Push #48 | **
+
+### **Git Push #49 | **
+
+### **Git Push #50 | **
 
 </details>
