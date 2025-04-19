@@ -162,7 +162,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #36 | Password Request Reset Function**
 
-### **Git Push #37 | **
+### **Git Push #37 | Generate Reset URL for Password Reset**
 
 ### **Git Push #38 | **
 
