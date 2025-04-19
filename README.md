@@ -156,7 +156,9 @@ https://www.postman.com/downloads/
 
 ### **Git Push #34 | Refer User Model ID in Product Model**
 
-### **Git Push #35 | **
+### **Git Push #35 | Generating Reset Token using crypto package**
+- Install ```npm i crypto```
+- Inside *backend* folders create a temporary file(for testing crypto) as ***```index.js```***
 
 ### **Git Push #36 | **
 
