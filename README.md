@@ -160,7 +160,7 @@ https://www.postman.com/downloads/
 - Install ```npm i crypto```
 - Inside *backend* folders create a temporary file(for testing crypto) as ***```index.js```***
 
-### **Git Push #36 | **
+### **Git Push #36 | Password Request Reset Function**
 
 ### **Git Push #37 | **
 

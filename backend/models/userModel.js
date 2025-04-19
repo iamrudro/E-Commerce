@@ -44,12 +44,13 @@ const userSchema = new mongoose.Schema({
 
 // Password Hashing
 userSchema.pre("save", async function (next) {
-    this.password = await bcrypt.hash(this.password, 10)
     // 1st instance - updating profile(name,email,image) --hashed password will be hash again ❌
     // 2nd instance - update password ✅
     if (!this.isModified("password")) {
         return next();
     }
+    this.password = await bcrypt.hash(this.password, 10)
+    next();
 })
 
 
@@ -73,3 +74,4 @@ userSchema.methods.generatePasswordResetToken = function () {
 }
 
 export default mongoose.model("User", userSchema)
+                                                           
