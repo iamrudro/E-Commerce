@@ -183,7 +183,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #43 | Update User's Existing Password**
 
-### **Git Push #44 | **
+### **Git Push #44 | Update User's Profile**
 
 ### **Git Push #45 | **
 
