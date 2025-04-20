@@ -164,11 +164,13 @@ https://www.postman.com/downloads/
 
 ### **Git Push #37 | Generate Reset URL for Password Reset**
 
-### **Git Push #38 | **
+### **Git Push #38 | Working on Nodemailer**
+- Inside *utils* folder create a file named ***```sendEmail.js```***
+- Install ```npm i nodemailer```
 
-### **Git Push #39 | **
+### **Git Push #39 | Generate App Password for Sending Emails**
 
-### **Git Push #40 | **
+### **Git Push #40 | Sending Reset Password Email**
 
 </details>
 
