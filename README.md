@@ -181,7 +181,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #42 | Get User Profile Details API**
 
-### **Git Push #43 | **
+### **Git Push #43 | Update User's Existing Password**
 
 ### **Git Push #44 | **
 
