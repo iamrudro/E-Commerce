@@ -179,7 +179,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #41 | Reset Password using token** 
 
-### **Git Push #42 | **
+### **Git Push #42 | Get User Profile Details API**
 
 ### **Git Push #43 | **
 
