@@ -2,6 +2,7 @@ import handleAsyncError from "../middleware/handleAsyncError.js";
 import User from '../models/userModel.js';
 import HandleError from '../utils/handleError.js';
 import { sendToken } from "../utils/jwtToken.js";
+import { sendEmail } from "../utils/sendEmail.js";
 
 // 🖥️Register
 export const registerUser = handleAsyncError(async (req, res, next) => {
@@ -84,7 +85,16 @@ export const requestPasswordReset = handleAsyncError(async (req, res, next) => {
     const resetPasswordURL = `http://localhost/api/v1/reset/${resetToken}`;
     const message = `Use the follwoing link to reset your password: ${resetPasswordURL}. \n\n This link will expire in 30 minutes. \n\n If you didn't request a password reset , please ignore this message.`;
     try {
-
+        // Send Email📧
+        await sendEmail({
+            email: user.email,
+            subject: 'Password Reset Request',
+            message
+        })
+        res.status(200).json({
+            success: true,
+            message: `Email is send to ${user.email} successfully`
+        })
     } catch (error) {
         user.resetPasswordToken = undefined;
         user.resetPasswordExpire = undefined;
