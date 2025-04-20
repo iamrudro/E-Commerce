@@ -177,7 +177,7 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 41 to 50</summary>
 
-### **Git Push #41 | ** 
+### **Git Push #41 | Reset Password using token** 
 
 ### **Git Push #42 | **
 
@@ -196,5 +196,30 @@ https://www.postman.com/downloads/
 ### **Git Push #49 | **
 
 ### **Git Push #50 | **
+
+</details>
+
+<details>
+<summary>Git Push to 51 to 60</summary>
+
+### **Git Push #51 | ** 
+
+### **Git Push #52 | **
+
+### **Git Push #53 | **
+
+### **Git Push #54 | **
+
+### **Git Push #55 | **
+
+### **Git Push #56 | **
+
+### **Git Push #57 | **
+
+### **Git Push #58 | **
+
+### **Git Push #59 | **
+
+### **Git Push #60 | **
 
 </details>
