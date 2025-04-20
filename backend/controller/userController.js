@@ -3,6 +3,7 @@ import User from '../models/userModel.js';
 import HandleError from '../utils/handleError.js';
 import { sendToken } from "../utils/jwtToken.js";
 import { sendEmail } from "../utils/sendEmail.js";
+import crypto from 'crypto';
 
 // 🖥️Register
 export const registerUser = handleAsyncError(async (req, res, next) => {
@@ -68,7 +69,7 @@ export const logout = handleAsyncError(async (req, res, next) => {
 })
 
 
-// Reset Password
+// Forget Password
 export const requestPasswordReset = handleAsyncError(async (req, res, next) => {
     const { email } = req.body
     const user = await User.findOne({ email })
@@ -101,4 +102,26 @@ export const requestPasswordReset = handleAsyncError(async (req, res, next) => {
         await user.save({ validateBeforeSave: false })
         return next(new HandleError("Email could not be sent, Please try again later", 500))
     }
+})
+
+
+// Reset Password
+export const resetPassword = handleAsyncError(async (req, res, next) => {
+    const resetPasswordToken = crypto.createHash("sha256").update(req.params.token).digest("hex");
+    const user = await User.findOne({
+        resetPasswordToken,
+        resetPasswordExpire: { $gt: Date.now() }
+    })
+    if (!user) {
+        return next(new HandleError("Reset password token is invalid or has been expired", 400))
+    }
+    const { password, confirmPassword } = req.body;
+    if (password !== confirmPassword) {
+        return next(new HandleError("Password doesn't Match", 400))
+    }
+    user.password = password;
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpire = undefined;
+    await user.save();
+    sendToken(user, 200, res)
 })
