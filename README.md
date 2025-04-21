@@ -185,11 +185,11 @@ https://www.postman.com/downloads/
 
 ### **Git Push #44 | Update User's Profile**
 
-### **Git Push #45 | **
+### **Git Push #45 | Working on Admin Routes**
 
-### **Git Push #46 | **
+### **Git Push #46 | Admin Routes - Get All Products**
 
-### **Git Push #47 | **
+### **Git Push #47 | Admin Routes - Access All Users**
 
 ### **Git Push #48 | **
 
