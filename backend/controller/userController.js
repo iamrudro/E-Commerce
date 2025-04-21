@@ -168,3 +168,13 @@ export const updateProfile = handleAsyncError(async (req, res, next) => {
         user
     })
 })
+
+
+// Admin - Getting user information
+export const getUserList = handleAsyncError(async (req, res, next) => {
+    const users = await User.find();
+    res.status(200).json({
+        success: true,
+        users
+    })
+})
