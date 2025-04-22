@@ -193,7 +193,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #48 | Admin Routes - Access Single User Information**
 
-### **Git Push #49 | **
+### **Git Push #49 | Admin Routes - Update User Role**
 
 ### **Git Push #50 | **
 
