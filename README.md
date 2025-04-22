@@ -195,7 +195,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #49 | Admin Routes - Update User Role**
 
-### **Git Push #50 | **
+### **Git Push #50 | Admin Routes - Delete User Profile**
 
 </details>
 

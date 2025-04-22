@@ -212,3 +212,15 @@ export const updateUserRole = handleAsyncError(async (req, res, next) => {
     })
 })
 
+// Admin - Delete user profile
+export const deleteUser = handleAsyncError(async (req, res, next) => {
+    const user = await User.findById(req.params.id);
+    if (!user) {
+        return next(new HandleError("User doesn't exist", 400))
+    }
+    await User.findByIdAndDelete(req.params.id);
+    res.status(200).json({
+        success: true,
+        message: "User deleted Successfully"
+    })
+})
