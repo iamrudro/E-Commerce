@@ -141,7 +141,6 @@ export const createReviewForProduct = handleAsyncError(async (req, res, next) =>
 })
 
 
-
 // 8️⃣. Getting reviews
 export const getProductReviews = handleAsyncError(async (req, res, next) => {
     // console.log(req.query.id);
@@ -152,6 +151,34 @@ export const getProductReviews = handleAsyncError(async (req, res, next) => {
     res.status(200).json({
         success: true,
         reviews: product.reviews
+    })
+})
+
+
+// 9️⃣. Deleting Reviews
+export const deleteReview = handleAsyncError(async (req, res, next) => {
+    const product = await Product.findById(req.query.productId);
+    if (!product) {
+        return next(new HandleError("Product not found", 400))
+    }
+    const reviews = product.reviews.filter(review => review._id.toString() !== req.query.id.toString())
+    let sum = 0;
+    reviews.forEach(review => {
+        sum += review.rating
+    })
+    const ratings = reviews.length > 0 ? sum / reviews.length : 0;
+    const numOfReviews = reviews.length;
+    await Product.findByIdAndUpdate(req.query.productId, {
+        reviews,
+        ratings,
+        numOfReviews
+    }, {
+        new: true,
+        runValidators: true
+    })
+    res.status(200).json({
+        success: true,
+        message: "Review Deleted Successfully"
     })
 })
 
