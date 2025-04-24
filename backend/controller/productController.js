@@ -101,7 +101,7 @@ export const getSingleProduct = handleAsyncError(async (req, res, next) => {
 })
 
 
-// 7️⃣. Creating ans updating Review
+// 7️⃣. Creating and updating Review
 export const createReviewForProduct = handleAsyncError(async (req, res, next) => {
     // console.log(req.body);
     // console.log(req.user.id);
@@ -113,7 +113,9 @@ export const createReviewForProduct = handleAsyncError(async (req, res, next) =>
         comment
     }
     const product = await Product.findById(productId);
-    // console.log(product);
+    if (!product) {
+        return next(new HandleError("Product not found", 400))
+    }
     const reviewExists = product.reviews.find(review => review.user.toString() === req.user.id.toString())
     if (reviewExists) {
         product.reviews.forEach(review => {
@@ -138,6 +140,20 @@ export const createReviewForProduct = handleAsyncError(async (req, res, next) =>
     })
 })
 
+
+
+// 8️⃣. Getting reviews
+export const getProductReviews = handleAsyncError(async (req, res, next) => {
+    // console.log(req.query.id);
+    const product = await Product.findById(req.query.id);
+    if (!product) {
+        return next(new HandleError("Product not found", 400))
+    }
+    res.status(200).json({
+        success: true,
+        reviews: product.reviews
+    })
+})
 
 
 // 6️⃣. Admin - Getting All Products
