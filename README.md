@@ -204,7 +204,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #51 | Create and Update Product Review** 
 
-### **Git Push #52 | **
+### **Git Push #52 | Get all product reviews**
 
 ### **Git Push #53 | **
 
