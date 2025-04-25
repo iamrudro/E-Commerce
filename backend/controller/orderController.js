@@ -24,3 +24,16 @@ export const createNewOrder = handleAsyncError(async (req, res, next) => {
         order
     })
 })
+
+
+// 2️⃣. Getting single Order
+export const getSingleOrder = handleAsyncError(async (req, res, next) => {
+    const order = await Order.findById(req.params.id).populate("user", "name email")
+    if (!order) {
+        return next(new HandleError("No Order Found", 404));
+    }
+    res.status(200).json({
+        success: true,
+        order
+    })
+})
