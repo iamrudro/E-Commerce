@@ -208,7 +208,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #53 | Delete Product Reviews**
 
-### **Git Push #54 | **
+### **Git Push #54 | Create Order Schema**
+- Inside *models* folder create a file named ***```orderModel.js```***
 
 ### **Git Push #55 | **
 
