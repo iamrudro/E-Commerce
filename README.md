@@ -211,7 +211,9 @@ https://www.postman.com/downloads/
 ### **Git Push #54 | Create Order Schema**
 - Inside *models* folder create a file named ***```orderModel.js```***
 
-### **Git Push #55 | **
+### **Git Push #55 | Create New Order**
+- Inside *controller* folder create a file named ***```orderController.js```***
+- Inside *routes* folder create a file named ***```orderRoutes.js```***
 
 ### **Git Push #56 | **
 
