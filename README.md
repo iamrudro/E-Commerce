@@ -223,7 +223,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #59 | Admin Route - Update Order Status**
 
-### **Git Push #60 | **
+### **Git Push #60 | Admin Route - Update Product Stock**
 
 </details>
 
