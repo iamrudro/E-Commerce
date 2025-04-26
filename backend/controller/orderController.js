@@ -1,5 +1,5 @@
 import Order from '../models/orderModel.js';
-import Porduct from '../models/productModel.js';
+import Product from '../models/productModel.js';
 import User from '../models/userModel.js';
 import handleAsyncError from '../middleware/handleAsyncError.js';
 import HandleError from '../utils/handleError.js';
@@ -76,13 +76,22 @@ export const updateOrderStatus = handleAsyncError(async (req, res, next) => {
     if (order.orderStatus === 'Delivered') {
         return next(new HandleError("This order is already been delivered", 404));
     }
-    await Promise.all(order.orderItems.map(item => console.log(item)))
+    await Promise.all(order.orderItems.map(item => updateQuantity(item.product, item.quantity)))
     order.orderStatus = req.body.status;
     if (order.orderStatus === 'Delivered') {
         order.deliveredAt = Date.now();
     }
+    await order.save({ validateBeforeSave: false })
     res.status(200).json({
         success: true,
         order
     })
 })
+async function updateQuantity(id, quantity) {
+    const product = await Product.findById(id);
+    if (!product) {
+        return next(new HandleError("Product not found", 404));
+    }
+    product.stock = product.stock - quantity
+    await product.save({ validateBeforeSave: false })
+}
