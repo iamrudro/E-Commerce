@@ -233,7 +233,11 @@ https://www.postman.com/downloads/
 ### **Git Push #61 | Admin Route - Delete Delivered Order** 
 - Backend completed
 
-### **Git Push #62 | **
+### **Git Push #62 | Frontend and React Router Setup**
+- Inside frontend folder , install React ```npm create vite@latest```
+- Install ```npm i react-router-dom```
+- Inside ```src``` folder create a folder named ```pages```
+- Then inside ```pages``` folder create the file ```Home.jsx```
 
 ### **Git Push #63 | **
 
