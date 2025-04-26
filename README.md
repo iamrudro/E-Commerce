@@ -219,7 +219,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #57 | Get Logged-In User Orders**
 
-### **Git Push #58 | **
+### **Git Push #58 | Admin Route - Get All Orders**
 
 ### **Git Push #59 | **
 
