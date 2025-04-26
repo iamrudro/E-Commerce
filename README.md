@@ -230,7 +230,8 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 61 to 70</summary>
 
-### **Git Push #61 | ** 
+### **Git Push #61 | Admin Route - Delete Delivered Order** 
+- Backend completed
 
 ### **Git Push #62 | **
 
@@ -249,5 +250,30 @@ https://www.postman.com/downloads/
 ### **Git Push #69 | **
 
 ### **Git Push #70 | **
+
+</details>
+
+<details>
+<summary>Git Push to 71 to 80</summary>
+
+### **Git Push #71 | ** 
+
+### **Git Push #72 | **
+
+### **Git Push #73 | **
+
+### **Git Push #74 | **
+
+### **Git Push #75 | **
+
+### **Git Push #76 | **
+
+### **Git Push #77 | **
+
+### **Git Push #78 | **
+
+### **Git Push #79 | **
+
+### **Git Push #80 | **
 
 </details>
