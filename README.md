@@ -221,7 +221,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #58 | Admin Route - Get All Orders**
 
-### **Git Push #59 | **
+### **Git Push #59 | Admin Route - Update Order Status**
 
 ### **Git Push #60 | **
 
