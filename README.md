@@ -239,7 +239,10 @@ https://www.postman.com/downloads/
 - Inside ```src``` folder create a folder named ```pages```
 - Then inside ```pages``` folder create the file ```Home.jsx```
 
-### **Git Push #63 | **
+### **Git Push #63 | Working on Footer**
+- Inside ```src``` folder create ```components``` folder
+- Then inside ```components``` folder create ```Footer.jsx```
+- Install ```npm i @mui/icons-material@mui/material @emotion/react @emotion/styled @mui/styled-engine```
 
 ### **Git Push #64 | **
 
