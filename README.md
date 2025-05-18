@@ -244,7 +244,8 @@ https://www.postman.com/downloads/
 - Then inside ```components``` folder create ```Footer.jsx```
 - Install ```npm i @mui/icons-material@mui/material @emotion/react @emotion/styled @mui/styled-engine```
 
-### **Git Push #64 | **
+### **Git Push #64 | Working on Navbar - Responsove Design**
+- Then inside ```components``` folder create ```Navbar.jsx```
 
 ### **Git Push #65 | **
 
