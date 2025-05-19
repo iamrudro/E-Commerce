@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../componentStyles/Product.css';
+import Rating from './Rating';
 
 function Product({ product }) {
+    const [rating, setRating] = useState(0);
+    const handleRatingChange = (newRating) => {
+        setRating(rating)
+        console.log(`Rating Changed to : ${newRating}`);
+    }
+
     return (
         <Link to={product._id} className='product_id'>
             <div className="product-card">
@@ -10,7 +17,20 @@ function Product({ product }) {
                 <div className="product-details">
                     <h3 className="product-title">{product.name}</h3>
                     <p className="product-price"><strong>Price</strong> {product.price}/-</p>
-                    <button className="add-to-cart">Add To Cart</button>
+
+                    <div className="rating_container">
+                        <Rating
+                            value={product.ratings}
+                            onRatingChange={handleRatingChange}
+                            disabled={true}
+                        />
+                    </div>
+
+                    <span className="productCardSpan">
+                        ({product.numberOfReviews} {product.numberOfReviews === 1 ? "Review" : "Reviews"})
+                    </span>
+
+                    <button className="add-to-cart">View Details</button>
                 </div>
             </div>
         </Link>
