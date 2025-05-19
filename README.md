@@ -269,7 +269,8 @@ https://www.postman.com/downloads/
 - inside ```app``` folder create ```store.js```
 - Install ```npm i react-redux```
 
-### **Git Push #70 | **
+### **Git Push #70 | Fetch Product Data using API - createAsyncThunk**
+- Install ```npm i axios```
 
 </details>
 
@@ -295,5 +296,80 @@ https://www.postman.com/downloads/
 ### **Git Push #79 | **
 
 ### **Git Push #80 | **
+
+</details>
+
+<details>
+<summary>Git Push to 81 to 90</summary>
+
+### **Git Push #81 | ** 
+
+### **Git Push #82 | **
+
+### **Git Push #83 | **
+
+### **Git Push #84 | **
+
+### **Git Push #85 | **
+
+### **Git Push #86 | **
+
+### **Git Push #87 | **
+
+### **Git Push #88 | **
+
+### **Git Push #89 | **
+
+### **Git Push #90 | **
+
+</details>
+
+<details>
+<summary>Git Push to 91 to 100</summary>
+
+### **Git Push #91 | ** 
+
+### **Git Push #92 | **
+
+### **Git Push #93 | **
+
+### **Git Push #94 | **
+
+### **Git Push #95 | **
+
+### **Git Push #96 | **
+
+### **Git Push #97 | **
+
+### **Git Push #98 | **
+
+### **Git Push #99 | **
+
+### **Git Push #100 | **
+
+</details>
+
+<details>
+<summary>Git Push to 100 to 110</summary>
+
+### **Git Push #101 | ** 
+
+### **Git Push #102 | **
+
+### **Git Push #103 | **
+
+### **Git Push #104 | **
+
+### **Git Push #105 | **
+
+### **Git Push #106 | **
+
+### **Git Push #107 | **
+
+### **Git Push #108 | **
+
+### **Git Push #109 | **
+
+### **Git Push #110 | **
 
 </details>
