@@ -259,7 +259,15 @@ https://www.postman.com/downloads/
 ### **Git Push #68 | Create Dynamic Page Title**
 - Then inside ```components``` folder create ```PageTitle.jsx```
 
-### **Git Push #69 | **
+### **Git Push #69 | State Management setup using Redux Toolkit**
+- Install ```npm i @reduxjs/toolkit```
+- Then inside ```src``` folder create a folder named ```app```
+- Then inside ```src``` folder create a folder named ```features```
+- in this project we have four features -> Product , User , Cart , Order .
+- inside ```features``` folder create another folder named ```products```
+- inside ```features/products``` folder create ```productSlice.js```
+- inside ```app``` folder create ```store.js```
+- Install ```npm i react-redux```
 
 ### **Git Push #70 | **
 
