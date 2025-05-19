@@ -250,7 +250,8 @@ https://www.postman.com/downloads/
 ### **Git Push #65 | Image Slider**
 - Then inside ```components``` folder create ```ImageSlider.jsx```
 
-### **Git Push #66 | **
+### **Git Push #66 | Diplay Products**
+- Then inside ```components``` folder create ```Product.jsx```
 
 ### **Git Push #67 | **
 
