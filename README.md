@@ -256,7 +256,8 @@ https://www.postman.com/downloads/
 ### **Git Push #67 | Resuable Rating Component**
 - Then inside ```components``` folder create ```Rating.jsx```
 
-### **Git Push #68 | **
+### **Git Push #68 | Create Dynamic Page Title**
+- Then inside ```components``` folder create ```PageTitle.jsx```
 
 ### **Git Push #69 | **
 
