@@ -253,7 +253,8 @@ https://www.postman.com/downloads/
 ### **Git Push #66 | Diplay Products**
 - Then inside ```components``` folder create ```Product.jsx```
 
-### **Git Push #67 | **
+### **Git Push #67 | Resuable Rating Component**
+- Then inside ```components``` folder create ```Rating.jsx```
 
 ### **Git Push #68 | **
 
