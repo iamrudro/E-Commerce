@@ -247,7 +247,8 @@ https://www.postman.com/downloads/
 ### **Git Push #64 | Working on Navbar - Responsove Design**
 - Then inside ```components``` folder create ```Navbar.jsx```
 
-### **Git Push #65 | **
+### **Git Push #65 | Image Slider**
+- Then inside ```components``` folder create ```ImageSlider.jsx```
 
 ### **Git Push #66 | **
 
