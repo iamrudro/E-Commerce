@@ -279,7 +279,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #71 | Display API data in components - useSelector & useDispatch** 
 
-### **Git Push #72 | **
+### **Git Push #72 | Connect Frontend & Backend⭐**
+- creating proxy port in ```vite.config.js``` for using the project in same server
 
 ### **Git Push #73 | **
 
