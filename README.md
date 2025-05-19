@@ -277,7 +277,7 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 71 to 80</summary>
 
-### **Git Push #71 | ** 
+### **Git Push #71 | Display API data in components - useSelector & useDispatch** 
 
 ### **Git Push #72 | **
 
