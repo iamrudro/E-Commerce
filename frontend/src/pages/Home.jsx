@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImageSlider from '../components/ImageSlider'
 import Product from '../components/Product'
+import PageTitle from '../components/PageTitle'
 
 const products = [
   {
@@ -80,7 +81,7 @@ const products = [
     ],
     "createdAt": "2025-04-14T12:26:40.370Z",
     "__v": 3
-  },{
+  }, {
     "_id": "67fb9a0ebba9a69207d603da",
     "name": "Product1",
     "description": "Product description1",
@@ -160,6 +161,7 @@ const products = [
 const Home = () => {
   return (
     <>
+      <PageTitle title="Home-My Website" />
       <Navbar />
       <ImageSlider />
       <div className="home-container">
