@@ -291,7 +291,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #75 | Fetch Single Product Details**
 
-### **Git Push #76 | **
+### **Git Push #76 | Render Product Details in UI**
 
 ### **Git Push #77 | **
 
