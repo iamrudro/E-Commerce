@@ -289,7 +289,7 @@ https://www.postman.com/downloads/
 ### **Git Push #74 | Working on Product Details - Static Structure**
 - inside ```pages``` folder create ```ProductDetails.jsx```
 
-### **Git Push #75 | **
+### **Git Push #75 | Fetch Single Product Details**
 
 ### **Git Push #76 | **
 
