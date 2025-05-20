@@ -286,7 +286,8 @@ https://www.postman.com/downloads/
 - inside ```components``` folder create ```Loader.jsx```
 - Install ```npm i react-toastify```
 
-### **Git Push #74 | **
+### **Git Push #74 | Working on Product Details - Static Structure**
+- inside ```pages``` folder create ```ProductDetails.jsx```
 
 ### **Git Push #75 | **
 
