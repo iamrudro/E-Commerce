@@ -282,7 +282,9 @@ https://www.postman.com/downloads/
 ### **Git Push #72 | Connect Frontend & Backend⭐**
 - creating proxy port in ```vite.config.js``` for using the project in same server
 
-### **Git Push #73 | **
+### **Git Push #73 | Loader and Toastify - Error Handling Popup**
+- inside ```components``` folder create ```Loader.jsx```
+- Install ```npm i react-toastify```
 
 ### **Git Push #74 | **
 
