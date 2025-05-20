@@ -79,19 +79,19 @@ function ProductDetails() {
                         </div>
 
                         <div className="stock-status">
-                            <span className="in-stock">
-                                In Stock (9 available)
+                            <span className={product.stock > 0 ? `in-stock` : 'out-of-stock'}>
+                                {product.stock > 0 ? `In Stock (${product.stock} available)` : 'Out of Stock'}
                             </span>
                         </div>
 
-                        <div className="quantity-controls">
+                        {product.stock > 0 && (<> <div className="quantity-controls">
                             <span className="quantity-label">Quantity:</span>
                             <button className="quantity-button">-</button>
                             <input type="text" value={1} className='quantity-value' readOnly />
                             <button className="quantity-button">+</button>
                         </div>
 
-                        <button className="add-to-cart-btn">Add to Cart</button>
+                            <button className="add-to-cart-btn">Add to Cart</button></>)}
 
 
                         <form className="review-form">
@@ -109,19 +109,21 @@ function ProductDetails() {
 
                 <div className="reviews-container">
                     <h3>Customer Reviews</h3>
-                    <div className="reviews-section">
-                        <div className="review-item">
+                    {product.reviews && product.reviews.length > 0 ? (<div className="reviews-section">
+                        {product.reviews.map((review, index) => (<div className="review-item" key={index}>
                             <div className="review-header">
                                 <Rating
-                                    value={1}
+                                    value={review.rating}
                                     disabled={true}
                                 />
                             </div>
 
-                            <p className="review-comment">Review Comment</p>
-                            <p className="review-name">By Rudranil</p>
-                        </div>
-                    </div>
+                            <p className="review-comment">{review.comment}</p>
+                            <p className="review-name">By : {review.name}</p>
+                        </div>))}
+                    </div>) : (
+                        <p className="no-reviews">No reviews yet. Be the first to review this product!</p>
+                    )}
                 </div>
             </div>
             <Footer />
