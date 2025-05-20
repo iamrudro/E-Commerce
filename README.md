@@ -293,7 +293,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #76 | Render Product Details in UI**
 
-### **Git Push #77 | **
+### **Git Push #77 | Conditionally Render Stocks and Reviews**
 
 ### **Git Push #78 | **
 
