@@ -295,7 +295,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #77 | Conditionally Render Stocks and Reviews**
 
-### **Git Push #78 | **
+### **Git Push #78 | Working on All Products - Static Structure**
+- inside ```pages``` folder create ```Products.jsx```
 
 ### **Git Push #79 | **
 
