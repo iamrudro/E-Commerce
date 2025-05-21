@@ -309,7 +309,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #81 | 🔍Search Functionality - Search API** 
 
-### **Git Push #82 | **
+### **Git Push #82 | ⚠️No Product Found Resuable Component**
+- inside ```components``` folder create ```NoProduct.jsx```
 
 ### **Git Push #83 | **
 
