@@ -314,7 +314,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #83 | Pagination API**
 
-### **Git Push #84 | **
+### **Git Push #84 | Reusable Pagination Component and Buttons**
+- inside ```components``` folder create ```Pagination.jsx```
 
 ### **Git Push #85 | **
 
