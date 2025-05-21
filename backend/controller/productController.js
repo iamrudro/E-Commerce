@@ -21,7 +21,7 @@ export const createProducts = handleAsyncError(async (req, res, next) => {
 
 // 2️⃣.Getting All Products
 export const getAllProducts = handleAsyncError(async (req, res, next) => {
-    const resultPerPage = 4;
+    const resultPerPage = 2;
     const apiFeatures = new APIFunctionality(Product.find(), req.query).search().filter();
 
     // Getting filtered query before pagination
