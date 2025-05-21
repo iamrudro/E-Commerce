@@ -312,7 +312,7 @@ https://www.postman.com/downloads/
 ### **Git Push #82 | ⚠️No Product Found Resuable Component**
 - inside ```components``` folder create ```NoProduct.jsx```
 
-### **Git Push #83 | **
+### **Git Push #83 | Pagination API**
 
 ### **Git Push #84 | **
 
