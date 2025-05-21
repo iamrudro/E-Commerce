@@ -298,16 +298,16 @@ https://www.postman.com/downloads/
 ### **Git Push #78 | Working on All Products - Static Structure**
 - inside ```pages``` folder create ```Products.jsx```
 
-### **Git Push #79 | **
+### **Git Push #79 | 🔍Search Functionality - Access State**
 
-### **Git Push #80 | **
+### **Git Push #80 | 🔍**
 
 </details>
 
 <details>
 <summary>Git Push to 81 to 90</summary>
 
-### **Git Push #81 | ** 
+### **Git Push #81 | 🔍** 
 
 ### **Git Push #82 | **
 
