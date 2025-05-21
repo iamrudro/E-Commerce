@@ -13,7 +13,7 @@ import NoProduct from '../components/NoProduct';
 
 function Products() {
 
-    const { loading, error, products } = useSelector(state => state.product)
+    const { loading, error, products, resultPerPage, productCount } = useSelector(state => state.product)
     const dispatch = useDispatch();
 
     const location = useLocation();
