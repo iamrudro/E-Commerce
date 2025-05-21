@@ -319,7 +319,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #85 | Pagination - Handle Page Change**
 
-### **Git Push #86 | **
+### **Git Push #86 | Working on Categories Filter**
 
 ### **Git Push #87 | **
 
