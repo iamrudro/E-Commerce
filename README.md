@@ -327,7 +327,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #88 | Registration Form - onChange Event Handler**
 
-### **Git Push #89 | **
+### **Git Push #89 | Registering User - onSubmit Event Handler**
 
 ### **Git Push #90 | **
 
