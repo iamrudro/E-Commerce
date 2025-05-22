@@ -325,7 +325,7 @@ https://www.postman.com/downloads/
 - inside ```src``` folder create another folder named ```User```
 - inside ```User``` folder create ```Register.jsx```
 
-### **Git Push #88 | **
+### **Git Push #88 | Registration Form - onChange Event Handler**
 
 ### **Git Push #89 | **
 
