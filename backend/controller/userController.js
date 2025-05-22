@@ -8,8 +8,6 @@ import crypto from 'crypto';
 // 🖥️Register
 export const registerUser = handleAsyncError(async (req, res, next) => {
     const { name, email, password } = req.body;
-
-
     const user = await User.create({
         name,
         email,
@@ -19,13 +17,6 @@ export const registerUser = handleAsyncError(async (req, res, next) => {
             url: "This is temp url"
         }
     })
-
-    // const token = user.getJWTToken();
-    // res.status(201).json({
-    //     success: true,
-    //     user,
-    //     token
-    // })
     sendToken(user, 201, res)
 })
 
