@@ -321,7 +321,9 @@ https://www.postman.com/downloads/
 
 ### **Git Push #86 | Working on Categories Filter**
 
-### **Git Push #87 | **
+### **Git Push #87 | Authentication - Registration Form**
+- inside ```src``` folder create another folder named ```User```
+- inside ```User``` folder create ```Register.jsx```
 
 ### **Git Push #88 | **
 
