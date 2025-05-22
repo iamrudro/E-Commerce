@@ -58,16 +58,16 @@ const userSlice = createSlice({
         })
             .addCase(register.fulfilled, (state, action) => {
                 state.loading = false,
-                    state.error = null,
-                    state.success = action.payload.success,
-                    state.user = action.payload?.user || null
+                    state.error = null
+                state.success = action.payload.success
+                state.user = action.payload?.user || null
                 state.isAuthenticated = Boolean(action.payload?.user)
             })
             .addCase(register.rejected, (state, action) => {
-                state.loading = true,
-                    state.error = action.payload?.message || 'Registration Failed. Please try again later',
-                    state.user = null,
-                    state.isAuthenticated = false
+                state.loading = false,
+                    state.error = action.payload?.message || 'Registration Failed. Please try again later'
+                state.user = null
+                state.isAuthenticated = false
             })
 
 
@@ -78,16 +78,18 @@ const userSlice = createSlice({
         })
             .addCase(login.fulfilled, (state, action) => {
                 state.loading = false,
-                    state.error = null,
-                    state.success = action.payload.success,
-                    state.user = action.payload?.user || null
+                    state.error = null
+                state.success = action.payload.success
+                state.user = action.payload?.user || null
                 state.isAuthenticated = Boolean(action.payload?.user)
+                console.log(state.user);
+
             })
             .addCase(login.rejected, (state, action) => {
-                state.loading = true,
-                    state.error = action.payload?.message || 'Login Failed. Please try again later',
-                    state.user = null,
-                    state.isAuthenticated = false
+                state.loading = false,
+                    state.error = action.payload?.message || 'Login Failed. Please try again later'
+                state.user = null
+                state.isAuthenticated = false
             })
     }
 })

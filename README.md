@@ -345,7 +345,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #93 | Fetch Login API**
 
-### **Git Push #94 | **
+### **Git Push #94 | Dispatch Login Action**
 
 ### **Git Push #95 | **
 
