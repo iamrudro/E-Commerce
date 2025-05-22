@@ -10,14 +10,28 @@ export const register = createAsyncThunk('user/register', async (userData, { rej
             }
         }
         const { data } = await axios.post('/api/v1/register', userData, config)
-        console.log('REGISTRATION DATA');
+        console.log('REGISTRATION DATA', data);
         return data
     } catch (error) {
         return rejectWithValue(error.response?.data || 'Registration Failed. Please try again later')
     }
 })
 
-
+//Login API
+export const login = createAsyncThunk('user/login', async ({ email, password }, { rejectWithValue }) => {
+    try {
+        const config = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+        const { data } = await axios.post('/api/v1/login', { email, password }, config)
+        console.log('LOGIN DATA', data);
+        return data
+    } catch (error) {
+        return rejectWithValue(error.response?.data || 'Registration Failed. Please try again later')
+    }
+})
 
 const userSlice = createSlice({
     name: 'user',
@@ -52,6 +66,26 @@ const userSlice = createSlice({
             .addCase(register.rejected, (state, action) => {
                 state.loading = true,
                     state.error = action.payload?.message || 'Registration Failed. Please try again later',
+                    state.user = null,
+                    state.isAuthenticated = false
+            })
+
+
+        //Login Cases
+        builder.addCase(login.pending, (state) => {
+            state.loading = true,
+                state.error = null
+        })
+            .addCase(login.fulfilled, (state, action) => {
+                state.loading = false,
+                    state.error = null,
+                    state.success = action.payload.success,
+                    state.user = action.payload?.user || null
+                state.isAuthenticated = Boolean(action.payload?.user)
+            })
+            .addCase(login.rejected, (state, action) => {
+                state.loading = true,
+                    state.error = action.payload?.message || 'Login Failed. Please try again later',
                     state.user = null,
                     state.isAuthenticated = false
             })
