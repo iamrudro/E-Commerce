@@ -356,7 +356,7 @@ https://www.postman.com/downloads/
 - cloudinary is the official cloudinary SDK for managing and uploading media.
 - At the end import cloudinary in the ```server.js```
 
-### **Git Push #96 | **
+### **Git Push #96 | Upload User Profile in Cloudinary**
 
 ### **Git Push #97 | **
 
