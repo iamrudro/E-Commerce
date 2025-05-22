@@ -329,7 +329,9 @@ https://www.postman.com/downloads/
 
 ### **Git Push #89 | Registering User - onSubmit Event Handler**
 
-### **Git Push #90 | **
+### **Git Push #90 | Fetch Register API**
+- inside ```features``` folder create another folder ```user```
+- inside ```features/user``` folder create ```userSlice.js```
 
 </details>
 
@@ -380,5 +382,55 @@ https://www.postman.com/downloads/
 ### **Git Push #109 | **
 
 ### **Git Push #110 | **
+
+</details>
+
+<details>
+<summary>Git Push to 111 to 120</summary>
+
+### **Git Push #111 | ** 
+
+### **Git Push #112 | **
+
+### **Git Push #113 | **
+
+### **Git Push #114 | **
+
+### **Git Push #115 | **
+
+### **Git Push #116 | **
+
+### **Git Push #117 | **
+
+### **Git Push #118 | **
+
+### **Git Push #119 | **
+
+### **Git Push #120 | **
+
+</details>
+
+<details>
+<summary>Git Push to 121 to 130</summary>
+
+### **Git Push #121 | ** 
+
+### **Git Push #122 | **
+
+### **Git Push #123 | **
+
+### **Git Push #124 | **
+
+### **Git Push #125 | **
+
+### **Git Push #126 | **
+
+### **Git Push #127 | **
+
+### **Git Push #128 | **
+
+### **Git Push #129 | **
+
+### **Git Push #130 | **
 
 </details>
