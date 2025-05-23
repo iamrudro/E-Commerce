@@ -365,7 +365,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #99 | Create User Dashboard**
 
-### **Git Push #100 | **
+### **Git Push #100 | Fetch Logout API**
 
 </details>
 
