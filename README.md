@@ -375,7 +375,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #101 | Dispatch Logout Action**
 
-### **Git Push #102 | **
+### **Git Push #102 | Static Structure of Profile Page**
+- inside ```User``` folder create ```Profile.jsx```
 
 ### **Git Push #103 | **
 
