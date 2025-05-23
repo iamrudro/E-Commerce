@@ -350,6 +350,7 @@ https://www.postman.com/downloads/
 ### **Git Push #95 | Complete Cloudinary Sign-Up Process**
 - Cloudinary will provide cloud media management services for our website.
 - Every images that will be uploaded in the project will be setup using Cloudinary.
+- ```https://console.cloudinary.com/app/c-6278c7507afa89abc7806402422f0b/assets/media_library/folders/cb7bd03375092ddf43daa45f46307b382e?view_mode=list```
 - Inside Root folder , the following packages will be installed
 - ```npm i express-fileupload cloudinary```
 - Express-fileupload is a middleware which will handle file uploads in our express application. 
@@ -372,7 +373,7 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 100 to 110</summary>
 
-### **Git Push #101 | ** 
+### **Git Push #101 | Dispatch Logout Action**
 
 ### **Git Push #102 | **
 
