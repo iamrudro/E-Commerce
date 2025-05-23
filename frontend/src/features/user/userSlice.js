@@ -29,7 +29,17 @@ export const login = createAsyncThunk('user/login', async ({ email, password }, 
         console.log('LOGIN DATA', data);
         return data
     } catch (error) {
-        return rejectWithValue(error.response?.data || 'Registration Failed. Please try again later')
+        return rejectWithValue(error.response?.data || 'Login Failed. Please try again later')
+    }
+})
+
+//Fetch Load User
+export const loadUser = createAsyncThunk('user/loadUser', async (_, { rejectWithValue }) => {
+    try {
+        const { data } = await axios.get('/api/v1/profile');
+        return data
+    } catch (error) {
+        return rejectWithValue(error.response?.data || 'Failed to load user profile. Please try again later')
     }
 })
 
@@ -88,6 +98,25 @@ const userSlice = createSlice({
             .addCase(login.rejected, (state, action) => {
                 state.loading = false,
                     state.error = action.payload?.message || 'Login Failed. Please try again later'
+                state.user = null
+                state.isAuthenticated = false
+            })
+
+
+        //Loading User Cases
+        builder.addCase(loadUser.pending, (state) => {
+            state.loading = true,
+                state.error = null
+        })
+            .addCase(loadUser.fulfilled, (state, action) => {
+                state.loading = false,
+                    state.error = null
+                state.user = action.payload?.user || null
+                state.isAuthenticated = Boolean(action.payload?.user)
+            })
+            .addCase(loadUser.rejected, (state, action) => {
+                state.loading = false,
+                    state.error = action.payload?.message || 'Failed to load user profile. Please try again later'
                 state.user = null
                 state.isAuthenticated = false
             })
