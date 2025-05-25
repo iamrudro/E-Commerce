@@ -380,7 +380,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #103 | Render Logged in User Information**
 
-### **Git Push #104 | **
+### **Git Push #104 | Protecting Routes**
+- inside ```components``` folder create ```ProtectedRoute.jsx```
 
 ### **Git Push #105 | **
 
