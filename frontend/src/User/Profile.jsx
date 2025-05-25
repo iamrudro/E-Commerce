@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import '../UserStyles/Profile.css';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import PageTitle from '../components/PageTitle';
 import Loader from '../components/Loader';
