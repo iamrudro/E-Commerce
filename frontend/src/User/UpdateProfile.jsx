@@ -55,6 +55,14 @@ function UpdateProfile() {
         }
     }, [dispatch, success])
 
+    useEffect(() => {
+        if (user) {
+            setName(user.name)
+            setEmail(user.email)
+            setAvatarPreview(user.avatar.url || './images/avatar.jpg')
+        }
+    }, [user])
+
     return (
         <>
             {loading ? (<Loader />) : (<>
