@@ -386,7 +386,7 @@ https://www.postman.com/downloads/
 ### **Git Push #105 | Editing/Updating Profile Form - Static Structure**
 - inside ```User``` folder create ```UpdateProfile.jsx```
 
-### **Git Push #106 | **
+### **Git Push #106 | Working on Profile Image Update**
 
 ### **Git Push #107 | **
 
