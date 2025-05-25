@@ -394,7 +394,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #109 | Display Data in Form**
 
-### **Git Push #110 | **
+### **Git Push #110 | Backend - Working on Updating Avatar**
 
 </details>
 
@@ -445,5 +445,80 @@ https://www.postman.com/downloads/
 ### **Git Push #129 | **
 
 ### **Git Push #130 | **
+
+</details>
+
+<details>
+<summary>Git Push to 131 to 140</summary>
+
+### **Git Push #131 | ** 
+
+### **Git Push #132 | **
+
+### **Git Push #133 | **
+
+### **Git Push #134 | **
+
+### **Git Push #135 | **
+
+### **Git Push #136 | **
+
+### **Git Push #137 | **
+
+### **Git Push #138 | **
+
+### **Git Push #139 | **
+
+### **Git Push #140 | **
+
+</details>
+
+<details>
+<summary>Git Push to 141 to 150</summary>
+
+### **Git Push #141 | ** 
+
+### **Git Push #142 | **
+
+### **Git Push #143 | **
+
+### **Git Push #144 | **
+
+### **Git Push #145 | **
+
+### **Git Push #146 | **
+
+### **Git Push #147 | **
+
+### **Git Push #148 | **
+
+### **Git Push #149 | **
+
+### **Git Push #150 | **
+
+</details>
+
+<details>
+<summary>Git Push to 151 to 160</summary>
+
+### **Git Push #151 | ** 
+
+### **Git Push #152 | **
+
+### **Git Push #153 | **
+
+### **Git Push #154 | **
+
+### **Git Push #155 | **
+
+### **Git Push #156 | **
+
+### **Git Push #157 | **
+
+### **Git Push #158 | **
+
+### **Git Push #159 | **
+
+### **Git Push #160 | **
 
 </details>

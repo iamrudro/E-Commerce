@@ -150,10 +150,24 @@ export const updatePassword = handleAsyncError(async (req, res, next) => {
 
 // Update user Profile
 export const updateProfile = handleAsyncError(async (req, res, next) => {
-    const { name, email } = req.body;
+    const { name, email, avatar } = req.body;
     const updateUserDetails = {
         name,
         email
+    }
+    if (avatar !== "") {
+        const user = await User.findById(req.user.id);
+        const imageID = user.avatar.public_id
+        await cloudinary.uploader.destroy(imageID)
+        const mycloud = await cloudinary.uploader.upload(avatar, {
+            folder: 'avatars',
+            width: 150,
+            crop: 'scale'
+        })
+        updateUserDetails.avatar = {
+            public_id: mycloud.public_id,
+            url: mycloud.secure_url
+        }
     }
     const user = await User.findByIdAndUpdate(req.user.id, updateUserDetails, {
         new: true,
