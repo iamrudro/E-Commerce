@@ -390,7 +390,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #107 | Fetch Update Profile API**
 
-### **Git Push #108 | **
+### **Git Push #108 | Dispatch Update Profile Action**
 
 ### **Git Push #109 | **
 
