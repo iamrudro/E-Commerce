@@ -378,7 +378,7 @@ https://www.postman.com/downloads/
 ### **Git Push #102 | Static Structure of Profile Page**
 - inside ```User``` folder create ```Profile.jsx```
 
-### **Git Push #103 | **
+### **Git Push #103 | Render Logged in User Information**
 
 ### **Git Push #104 | **
 
