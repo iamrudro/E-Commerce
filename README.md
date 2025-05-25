@@ -388,7 +388,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #106 | Working on Profile Image Update**
 
-### **Git Push #107 | **
+### **Git Push #107 | Fetch Update Profile API**
 
 ### **Git Push #108 | **
 
