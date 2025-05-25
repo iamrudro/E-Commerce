@@ -383,7 +383,8 @@ https://www.postman.com/downloads/
 ### **Git Push #104 | Protecting Routes**
 - inside ```components``` folder create ```ProtectedRoute.jsx```
 
-### **Git Push #105 | **
+### **Git Push #105 | Editing/Updating Profile Form - Static Structure**
+- inside ```User``` folder create ```UpdateProfile.jsx```
 
 ### **Git Push #106 | **
 

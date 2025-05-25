@@ -23,7 +23,7 @@ function Profile() {
                 <div className="profile-image">
                     <h1 className="profile-heading">My Profile</h1>
                     <img src={user.avatar.url ? user.avatar.url : './images/avatar.jpg'} alt="User Profile" className="profile-image" />
-                    <Link to="/password/update">Edit Profile</Link>
+                    <Link to="/profile/update">Edit Profile</Link>
                 </div>
                 <div className="profile-details">
                     <div className="profile-detail">
