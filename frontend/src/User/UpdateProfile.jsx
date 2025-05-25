@@ -29,7 +29,7 @@ function UpdateProfile() {
             <Navbar />
             <div className="container update-container">
                 <div className="form-content">
-                    <form className="form">
+                    <form className="form" encType='multipart/form-data'>
                         <h2>Update Profile</h2>
                         <div className="input-group avatar-group">
                             <input type="file" accept="image/" className="file-input" onChange={profileImageUpdate} />
