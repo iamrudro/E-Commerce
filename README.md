@@ -404,7 +404,7 @@ https://www.postman.com/downloads/
 ### **Git Push #111 | Update/Change Password Form - Static Structure**
 - inside ```User``` folder create ```UpdatePassword.jsx```
 
-### **Git Push #112 | **
+### **Git Push #112 | Fetch API for Update Password**
 
 ### **Git Push #113 | **
 
