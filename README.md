@@ -408,7 +408,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #113 | Dispatch Update Password Action**
 
-### **Git Push #114 | **
+### **Git Push #114 | Forgot Password Form**
+- inside ```User``` folder create ```ForgotPassword.jsx```
 
 ### **Git Push #115 | **
 
