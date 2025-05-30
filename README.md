@@ -401,7 +401,8 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 111 to 120</summary>
 
-### **Git Push #111 | ** 
+### **Git Push #111 | Update/Change Password Form - Static Structure**
+- inside ```User``` folder create ```UpdatePassword.jsx```
 
 ### **Git Push #112 | **
 
