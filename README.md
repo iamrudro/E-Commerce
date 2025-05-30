@@ -411,7 +411,7 @@ https://www.postman.com/downloads/
 ### **Git Push #114 | Forgot Password Form**
 - inside ```User``` folder create ```ForgotPassword.jsx```
 
-### **Git Push #115 | **
+### **Git Push #115 | Fetch Forgot Password API**
 
 ### **Git Push #116 | **
 
