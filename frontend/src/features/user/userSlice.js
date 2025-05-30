@@ -212,7 +212,7 @@ const userSlice = createSlice({
             })
             .addCase(updatePassword.rejected, (state, action) => {
                 state.loading = false,
-                    state.error = action.payload || 'Password updation Failed. Please try again later'
+                    state.error = action.payload?.message || 'Password updation Failed. Please try again later'
             })
     }
 })

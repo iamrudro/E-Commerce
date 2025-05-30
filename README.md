@@ -406,7 +406,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #112 | Fetch API for Update Password**
 
-### **Git Push #113 | **
+### **Git Push #113 | Dispatch Update Password Action**
 
 ### **Git Push #114 | **
 
