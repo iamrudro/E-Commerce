@@ -330,6 +330,7 @@ https://www.postman.com/downloads/
 ### **Git Push #89 | Registering User - onSubmit Event Handler**
 
 ### **Git Push #90 | Fetch Register API**
+- in this project we have four features -> Product , User , Cart , Order .
 - inside ```features``` folder create another folder ```user```
 - inside ```features/user``` folder create ```userSlice.js```
 
@@ -429,7 +430,10 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 121 to 130</summary>
 
-### **Git Push #121 | ** 
+### **Git Push #121 | Fetch Add Items to Cart API**
+- in this project we have four features -> Product , User , Cart , Order .
+- inside ```features``` folder create another folder named ```cart```
+- inside ```features/cart``` folder create ```cartSlice.js```
 
 ### **Git Push #122 | **
 
