@@ -1,0 +1,55 @@
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
+
+
+//Adding Items to Cart🛒
+export const addItemsToCart = createAsyncThunk('cart/addItemsToCart', async ({ id, quantity }, { rejectWithValue }) => {
+    try {
+        const { data } = await axios.get(`/api/v1/product/${id}`);
+        console.log('Add Items to cart - product', data);
+        return data
+    } catch (error) {
+        return rejectWithValue(error.response?.data || 'An error occurred')
+    }
+})
+
+
+
+const cartSlice = createSlice({
+    name: 'cart',
+    initialState: {
+        cartItems: [],
+        loading: false,
+        error: null,
+        success: false,
+        message: null
+    },
+    reducers: {
+        removeErrors: (state) => {
+            state.error = null
+        },
+        removeMessage: (state) => {
+            state.message = null
+        }
+    },
+    extraReducers: (builder) => {
+        //Add items to cart Cases
+        builder
+            .addCase(addItemsToCart.pending, (state) => {
+                state.loading = true
+                state.error = null
+            })
+            .addCase(addItemsToCart.fulfilled, (state, action) => {
+                const item = action.payload
+                console.log(item);
+            })
+            .addCase(addItemsToCart.rejected, (state, action) => {
+                state.loading = false
+                state.error = action.payload?.message || 'An error occurred'
+            })
+    }
+})
+
+
+export const { removeErrors, removeMessage } = cartSlice.actions;
+export default reducer
