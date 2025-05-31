@@ -435,7 +435,7 @@ https://www.postman.com/downloads/
 - inside ```features``` folder create another folder named ```cart```
 - inside ```features/cart``` folder create ```cartSlice.js```
 
-### **Git Push #122 | **
+### **Git Push #122 | Dispatch Add to cart Action**
 
 ### **Git Push #123 | **
 
