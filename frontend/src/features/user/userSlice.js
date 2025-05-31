@@ -112,7 +112,7 @@ export const resetPassword = createAsyncThunk('user/resetPassword', async ({ tok
         const { data } = await axios.post(`/api/v1/reset/${token}`, userData, config);
         return data
     } catch (error) {
-        return rejectWithValue(error.response?.data || { message: '' })
+        return rejectWithValue(error.response?.data || { message: 'Failed to reset password' })
     }
 })
 
@@ -279,7 +279,7 @@ const userSlice = createSlice({
             })
             .addCase(resetPassword.rejected, (state, action) => {
                 state.loading = false,
-                    state.error = action.payload?.message || 'Failed to send Email'
+                    state.error = action.payload?.message || 'Failed to reset password'
             })
     }
 })

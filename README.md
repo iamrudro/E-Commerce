@@ -420,7 +420,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #118 | Fetch API for Reset Password**
 
-### **Git Push #119 | **
+### **Git Push #119 | Dispatch Reset Password Action**
 
 ### **Git Push #120 | **
 
