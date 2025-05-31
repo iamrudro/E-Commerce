@@ -13,12 +13,16 @@ import Loader from '../components/Loader';
 function ProductDetails() {
 
     const [userRating, setUserRating] = useState(0);
+    const [quantity, setQuantity] = useState(1);
+
     const handleRatingChange = (newRating) => {
         setUserRating(newRating)
     }
+
     const { loading, error, product } = useSelector((state) => state.product);
     const dispatch = useDispatch();
     const { id } = useParams();
+
     useEffect(() => {
         if (id) {
             dispatch(getProductDetails(id));
@@ -55,6 +59,24 @@ function ProductDetails() {
         )
     }
 
+    const decreaseQuantity = () => {
+        if (quantity <= 1) {
+            toast.error("Quantity cannot be less than 1!", { position: 'top-center', autoClose: 3000 })
+            dispatch(removeErrors())
+            return;
+        }
+        setQuantity(qty => qty - 1)
+    }
+
+    const increaseQuantity = () => {
+        if (product.stock <= quantity) {
+            toast.error("Cannot exceed available Stock!", { position: 'top-center', autoClose: 3000 })
+            dispatch(removeErrors())
+            return;
+        }
+        setQuantity(qty => qty + 1)
+    }
+
     return (
         <>
             <PageTitle title={`${product.name} - Details`} />
@@ -86,9 +108,9 @@ function ProductDetails() {
 
                         {product.stock > 0 && (<> <div className="quantity-controls">
                             <span className="quantity-label">Quantity:</span>
-                            <button className="quantity-button">-</button>
-                            <input type="text" value={1} className='quantity-value' readOnly />
-                            <button className="quantity-button">+</button>
+                            <button className="quantity-button" onClick={decreaseQuantity}>-</button>
+                            <input type="text" value={quantity} className='quantity-value' readOnly />
+                            <button className="quantity-button" onClick={increaseQuantity}>+</button>
                         </div>
 
                             <button className="add-to-cart-btn">Add to Cart</button></>)}
