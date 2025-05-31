@@ -418,7 +418,7 @@ https://www.postman.com/downloads/
 ### **Git Push #117 | Reset Password Form - Static Structure**
 - inside ```User``` folder create ```ResetPassword.jsx```
 
-### **Git Push #118 | **
+### **Git Push #118 | Fetch API for Reset Password**
 
 ### **Git Push #119 | **
 
