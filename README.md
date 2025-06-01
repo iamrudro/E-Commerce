@@ -452,7 +452,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #128 | Checkout Handler Logic & Redirect Setup**
 
-### **Git Push #129 | **
+### **Git Push #129 | Shipping Info Component – Static Structure Setup**
+- inside ```src/Cart``` folder create ```Shipping.jsx```
 
 ### **Git Push #130 | **
 
