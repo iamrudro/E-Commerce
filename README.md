@@ -437,7 +437,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #122 | Dispatch Add to cart Action**
 
-### **Git Push #123 | **
+### **Git Push #123 | Check for Existing Items in Cart Before Adding**
 
 ### **Git Push #124 | **
 
