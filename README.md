@@ -448,7 +448,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #126 | Remove Items from Cart**
 
-### **Git Push #127 | **
+### **Git Push #127 | Calculate Subtotal, Tax, Shipping & Total in Cart**
 
 ### **Git Push #128 | **
 

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import '../UserStyles/UserDashboard.css';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { logout, removeSuccess } from '../features/user/userSlice';
 
 function UserDashboard({ user }) {
+    const { cartItems } = useSelector(state => state.cart)
     const dispatch = useDispatch();
     const naviagte = useNavigate();
 
@@ -17,6 +18,7 @@ function UserDashboard({ user }) {
     const options = [
         { name: 'Orders', funcName: orders },
         { name: 'Account', funcName: profile },
+        { name: `Cart(${cartItems.length})`, funcName: myCart, isCart: true },
         { name: 'Logout', funcName: logoutUser },
     ]
 
@@ -31,6 +33,9 @@ function UserDashboard({ user }) {
     }
     function profile() {
         naviagte("/profile")
+    }
+    function myCart() {
+        naviagte("/cart")
     }
     function logoutUser() {
         dispatch(logout())
@@ -59,7 +64,10 @@ function UserDashboard({ user }) {
 
                 {menuVisible && (<div className="menu-options">
                     {options.map((item) => (
-                        <button key={item.name} className="menu-option-btn" onClick={item.funcName}>{item.name}</button>
+                        <button key={item.name}
+                            className={`menu-option-btn ${item.isCart ? (cartItems.length > 0 ? 'cart-not-empty' : '') : ''}`}
+                            onClick={item.funcName}>
+                            {item.name}</button>
                     ))}
                 </div>)}
             </div>

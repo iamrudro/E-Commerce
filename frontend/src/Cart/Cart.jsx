@@ -12,6 +12,11 @@ function Cart() {
     const { cartItems } = useSelector(state => state.cart)
     console.log(cartItems);
 
+    const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)
+    const tax = subtotal * 0.18
+    const shipping = subtotal > 2000 ? 0 : 50
+    const total = subtotal + tax + shipping;
+
     return (
         <>
             <Navbar />
@@ -43,19 +48,19 @@ function Cart() {
                         <h3 className="price-summary-heading">Price Summary</h3>
                         <div className="summary-item">
                             <p className="summary-label">Item(s) Subtotal: </p>
-                            <p className="summary-value">2000/-</p>
+                            <p className="summary-value">{subtotal}/-</p>
                         </div>
                         <div className="summary-item">
                             <p className="summary-label">Tax (18%): </p>
-                            <p className="summary-value">100/-</p>
+                            <p className="summary-value">{tax}/-</p>
                         </div>
                         <div className="summary-item">
                             <p className="summary-label">Shipping: </p>
-                            <p className="summary-value">200/-</p>
+                            <p className="summary-value">{shipping}/-</p>
                         </div>
                         <div className="summary-total">
                             <p className="total-label">Total: </p>
-                            <p className="total-value">2300/-</p>
+                            <p className="total-value">{total}/-</p>
                         </div>
 
                         <button className="checkout-btn">Procced to Checkout</button>
