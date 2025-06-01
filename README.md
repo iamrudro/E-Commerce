@@ -455,7 +455,8 @@ https://www.postman.com/downloads/
 ### **Git Push #129 | Shipping Info Component – Static Structure Setup**
 - inside ```src/Cart``` folder create ```Shipping.jsx```
 
-### **Git Push #130 | **
+### **Git Push #130 | Setting Up the Checkout Path**
+- inside ```src/Cart``` folder create ```CheckoutPath.jsx```
 
 </details>
 
