@@ -450,7 +450,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #127 | Calculate Subtotal, Tax, Shipping & Total in Cart**
 
-### **Git Push #128 | **
+### **Git Push #128 | Checkout Handler Logic & Redirect Setup**
 
 ### **Git Push #129 | **
 
