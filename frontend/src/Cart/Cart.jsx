@@ -4,8 +4,13 @@ import PageTitle from '../components/PageTitle';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CartItem from './CartItem';
+import { useSelector } from 'react-redux';
 
 function Cart() {
+
+    const { cartItems } = useSelector(state => state.cart)
+    console.log(cartItems);
+
     return (
         <>
             <PageTitle title="Your Cart" />
@@ -22,9 +27,7 @@ function Cart() {
                         </div>
 
                         {/* Cart Items */}
-                        <CartItem />
-                        <CartItem />
-                        <CartItem />
+                        {cartItems && cartItems.map(item => <CartItem item={item} key={item.name} />)}
                     </div>
                 </div>
 
@@ -32,7 +35,7 @@ function Cart() {
                 <div className="price-summary">
                     <h3 className="price-summary-heading">Price Summary</h3>
                     <div className="summary-item">
-                        <p className="summary-label">Subtotal: </p>
+                        <p className="summary-label">Item(s) Subtotal: </p>
                         <p className="summary-value">2000/-</p>
                     </div>
                     <div className="summary-item">

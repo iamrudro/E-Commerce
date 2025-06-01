@@ -444,7 +444,7 @@ https://www.postman.com/downloads/
 - inside ```src/Cart``` folder create ```Cart.jsx```
 - inside ```src/Cart``` folder create ```CartItem.jsx```
 
-### **Git Push #125 | **
+### **Git Push #125 | Render Cart Items & Update Quantity**
 
 ### **Git Push #126 | **
 
