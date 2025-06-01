@@ -439,7 +439,10 @@ https://www.postman.com/downloads/
 
 ### **Git Push #123 | Check for Existing Items in Cart Before Adding**
 
-### **Git Push #124 | **
+### **Git Push #124 | Designing the Cart Layout – Static Cart Component Setup**
+- inside ```src``` folder create another folder named ```Cart```
+- inside ```src/Cart``` folder create ```Cart.jsx```
+- inside ```src/Cart``` folder create ```CartItem.jsx```
 
 ### **Git Push #125 | **
 
