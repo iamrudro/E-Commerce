@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../CartStyles/Cart.css';
 import { toast } from 'react-toastify';
-import { addItemsToCart, removeErrors, removeMessage } from '../features/cart/cartSlice';
+import { addItemsToCart, removeErrors, removeItemFromCart, removeMessage } from '../features/cart/cartSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 function CartItem({ item }) {
@@ -48,6 +48,12 @@ function CartItem({ item }) {
         }
     }, [dispatch, success, message])
 
+    const handleRemove = () => {
+        if (loading) return;
+        dispatch(removeItemFromCart(item.product))
+        toast.success("Item removed from cart successfully", { position: 'top-center', autoClose: 3000 });
+    }
+
     return (
         <div className="cart-item">
             <div className="item-info">
@@ -71,7 +77,7 @@ function CartItem({ item }) {
 
             <div className="item-actions">
                 <button className="update-item-btn" onClick={handleUpdate} disabled={loading || quantity === item.quantity}>{loading ? 'Updating' : 'Update'}</button>
-                <button className="remove-item-btn">Remove</button>
+                <button className="remove-item-btn" disabled={loading} onClick={handleRemove}>Remove</button>
             </div>
         </div>
     )

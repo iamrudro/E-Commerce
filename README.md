@@ -446,7 +446,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #125 | Render Cart Items & Update Quantity**
 
-### **Git Push #126 | **
+### **Git Push #126 | Remove Items from Cart**
 
 ### **Git Push #127 | **
 
