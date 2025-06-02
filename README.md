@@ -470,7 +470,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #133 | Dispatching Shipping Action to Redux Store**
 
-### **Git Push #134 | **
+### **Git Push #134 | Building the Order Confirmation Page**
+- inside ```src/Cart``` folder create ```OrderConfirm.jsx```
 
 ### **Git Push #135 | **
 
