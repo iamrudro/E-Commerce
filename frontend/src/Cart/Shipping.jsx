@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CheckoutPath from './CheckoutPath';
 import { useDispatch, useSelector } from 'react-redux';
+import { Country, State, City } from 'country-state-city';
 
 function Shipping() {
     const { shippingInfo } = useSelector(state => state.cart)
@@ -48,29 +49,46 @@ function Shipping() {
 
                     {/* country,state,city section */}
                     <div className="shipping-section">
+                        {/* COUNTRY */}
                         <div className="shipping-form-group">
                             <label htmlFor="country">Country</label>
-                            <select name="country" id="country" value={country} onChange={(e) => setCountry(e.target.value)}>
+                            <select name="country" id="country" value={country} onChange={(e) => {
+                                setCountry(e.target.value)
+                                setState("");
+                                setCity("")
+                            }}>
                                 <option value="">Select a Country</option>
-                                <option value="US">United States</option>
-                                <option value="IND">India</option>
-                                <option value="UK">United Kingdom</option>
-                                <option value="AUS">Australia</option>
-                                <option value="CAN">Canada</option>
+                                {Country && Country.getAllCountries().map((item) => (
+                                    <option value={item.isoCode} key={item.isoCode}>{item.name}</option>
+                                ))}
                             </select>
                         </div>
-                        <div className="shipping-form-group">
+
+                        {/* STATE */}
+                        {country && <div className="shipping-form-group">
                             <label htmlFor="state">State</label>
-                            <select name="state" id="state" value={state} onChange={(e) => setState(e.target.value)}>
+                            <select name="state" id="state" value={state} onChange={(e) => {
+                                setState(e.target.value)
+                                setCity("")
+                            }}>
                                 <option value="">Select a State</option>
+                                {State && State.getStatesOfCountry(country).map((item) => (
+                                    <option value={item.isoCode} key={item.isoCode}>{item.name}</option>
+                                ))}
                             </select>
-                        </div>
-                        <div className="shipping-form-group">
+                        </div>}
+
+                        {/* CITY */}
+                        {state && <div className="shipping-form-group">
                             <label htmlFor="city">City</label>
                             <select name="city" id="city" value={city} onChange={(e) => setCity(e.target.value)}>
                                 <option value="">Select a City</option>
+                                {City && City.getCitiesOfState(country, state).map((item) => (
+                                    <option value={item.name} key={item.name}>{item.name}</option>
+                                ))}
                             </select>
-                        </div>
+                        </div>}
+
                     </div>
                     <button className="shipping-submit-btn">Continue</button>
                 </form>
