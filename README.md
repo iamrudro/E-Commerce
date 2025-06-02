@@ -473,7 +473,8 @@ https://www.postman.com/downloads/
 ### **Git Push #134 | Building the Order Confirmation Page**
 - inside ```src/Cart``` folder create ```OrderConfirm.jsx```
 
-### **Git Push #135 | **
+### **Git Push #135 | Implementing Proceed to Payment Button**
+- inside ```src/Cart``` folder create ```Payment.jsx```
 
 ### **Git Push #136 | **
 
