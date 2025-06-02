@@ -6,21 +6,30 @@ import Footer from '../components/Footer';
 import CheckoutPath from './CheckoutPath';
 import { useDispatch, useSelector } from 'react-redux';
 import { Country, State, City } from 'country-state-city';
+import { toast } from 'react-toastify';
+import { saveShippingInfo } from '../features/cart/cartSlice';
+import { useNavigate } from 'react-router-dom';
 
 function Shipping() {
     const { shippingInfo } = useSelector(state => state.cart)
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
-    const [address, setAddress] = useState("");
-    const [pincode, setPincode] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
-    const [country, setCountry] = useState("");
-    const [state, setState] = useState("");
-    const [city, setCity] = useState("");
+    const [address, setAddress] = useState(shippingInfo.address || "");
+    const [pincode, setPincode] = useState(shippingInfo.pincode || "");
+    const [phoneNumber, setPhoneNumber] = useState(shippingInfo.phoneNumber || "");
+    const [country, setCountry] = useState(shippingInfo.country || "");
+    const [state, setState] = useState(shippingInfo.state || "");
+    const [city, setCity] = useState(shippingInfo.city || "");
 
     const shippingInfoSubmit = (e) => {
         e.preventDefault();
-        console.log('hello');
+        if (phoneNumber.length !== 10) {
+            toast.error('Invalid Phone Number!', { position: 'top-center', autoClose: 3000 })
+            return;
+        }
+        dispatch(saveShippingInfo({ address, pincode, phoneNumber, country, state, city }))
+        navigate('/order/confirm');
     }
 
     return (
