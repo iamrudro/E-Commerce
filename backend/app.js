@@ -5,6 +5,7 @@ import order from './routes/orderRoutes.js';
 import errorHandleMiddleware from './middleware/error.js';
 import cookieParser from 'cookie-parser';
 import fileUpload from 'express-fileupload';
+import dotenv from 'dotenv'
 const app = express();
 
 //Middleware
@@ -18,4 +19,6 @@ app.use("/api/v1", user)
 app.use("/api/v1", order)
 
 app.use(errorHandleMiddleware)
+dotenv.config({ path: 'backend/config/config.env' })
+
 export default app;

@@ -478,9 +478,11 @@ https://www.postman.com/downloads/
 
 ### **Git Push #136 | Manage User State on Page Refresh | Persist User State**
 
-### **Git Push #137 | **
+### **Git Push #137 | Razorpay Signup Process & Enable Test Mode**
 
-### **Git Push #138 | **
+### **Git Push #138 | Create Razorpay Instance for Payment Integration**
+- ```https://razorpay.com/docs/payments/server-integration/nodejs/```
+- Inside Root install ```npm i razorpay```
 
 ### **Git Push #139 | **
 
