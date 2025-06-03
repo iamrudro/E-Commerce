@@ -488,7 +488,7 @@ https://www.postman.com/downloads/
 - inside ***```controller```*** folder create ***```paymentController.js```***
 - inside ***```routes```*** folder create ***```paymentRoutes.js```***
 
-### **Git Push #140 | **
+### **Git Push #140 | Send Razorpay API Key to Frontend-Secure Controller Setup**
 
 </details>
 
