@@ -484,7 +484,9 @@ https://www.postman.com/downloads/
 - ```https://razorpay.com/docs/payments/server-integration/nodejs/```
 - Inside Root install ```npm i razorpay```
 
-### **Git Push #139 | **
+### **Git Push #139 | Working on Process Payment Controller-Razorpay Backend Logic**
+- inside ***```controller```*** folder create ***```paymentController.js```***
+- inside ***```routes```*** folder create ***```paymentRoutes.js```***
 
 ### **Git Push #140 | **
 
@@ -563,5 +565,59 @@ https://www.postman.com/downloads/
 ### **Git Push #169 | **
 
 ### **Git Push #170 | **
+
+</details>
+
+<details>
+<summary>Git Push to 171 to 180</summary>
+
+### **Git Push #171 | ** 
+
+### **Git Push #172 | **
+
+### **Git Push #173 | **
+
+### **Git Push #174 | **
+
+### **Git Push #175 | **
+
+### **Git Push #176 | **
+
+### **Git Push #177 | **
+
+### **Git Push #178 | **
+
+### **Git Push #179 | **
+
+### **Git Push #180 | **
+
+</details>
+
+<details>
+<summary>Git Push to 181 to 192</summary>
+
+### **Git Push #181 | ** 
+
+### **Git Push #182 | **
+
+### **Git Push #183 | **
+
+### **Git Push #184 | **
+
+### **Git Push #185 | **
+
+### **Git Push #186 | **
+
+### **Git Push #187 | **
+
+### **Git Push #188 | **
+
+### **Git Push #189 | **
+
+### **Git Push #190 | **
+
+### **Git Push #191 | **
+
+### **Git Push #192 | **
 
 </details>
