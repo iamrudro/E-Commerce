@@ -498,7 +498,7 @@ https://www.postman.com/downloads/
 ### **Git Push #141 | Working on Completing Payment**
 -Add the script tag of Razarpay in ```index.html``` in this step  
 
-### **Git Push #142 | **
+### **Git Push #142 | Verify Payment with Razorpay**
 
 ### **Git Push #143 | **
 
