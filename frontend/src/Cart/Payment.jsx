@@ -5,10 +5,44 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CheckoutPath from './CheckoutPath';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { useSelector } from 'react-redux';
 
 function Payment() {
 
     const orderItem = JSON.parse(sessionStorage.getItem('orderItem'))
+    const { user } = useSelector(state => state.user);
+    const { shippingInfo } = useSelector(state => state.cart);
+
+    const completePayment = async (amount) => {
+        const { data: keyData } = await axios.get('/api/v1/getKey');
+        const { key } = keyData;
+        const { data: orderData } = await axios.post('/api/v1/payment/process', { amount });
+        const { order } = orderData
+
+        // Open Razorpay Checkout💵💸💰💳
+        const options = {
+            key, // Replace with your Razorpay key_id
+            amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            currency: 'INR',
+            name: 'AtoZKart',
+            description: 'Ecommerce Website Payment Transaction',
+            order_id: order.id, // This is the order_id created in the backend
+            callback_url: '/api/v1/paymentVerification', // Your success URL
+            prefill: {
+                name: user.name,
+                email: user.email,
+                contact: shippingInfo.phoneNumber
+            },
+            theme: {
+                color: '#F37254'
+                // color: '#3399cc'
+            },
+        };
+
+        const rzp = new Razorpay(options);
+        rzp.open();
+    }
 
     return (
         <>
@@ -17,7 +51,7 @@ function Payment() {
             <CheckoutPath activePath={2} />
             <div className="payment-container">
                 <Link to="/order/confirm" className='payment-go-back'>Go Back</Link>
-                <button className="payment-btn">Pay Rs.({orderItem.total})</button>
+                <button className="payment-btn" onClick={() => completePayment(orderItem.total)}>Pay Rs.({orderItem.total})</button>
             </div>
             <Footer />
         </>

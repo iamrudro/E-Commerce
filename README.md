@@ -495,7 +495,8 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 141 to 150</summary>
 
-### **Git Push #141 | ** 
+### **Git Push #141 | Working on Completing Payment**
+-Add the script tag of Razarpay in ```index.html``` in this step  
 
 ### **Git Push #142 | **
 
