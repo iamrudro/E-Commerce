@@ -505,7 +505,10 @@ https://www.postman.com/downloads/
 ### **Git Push #144 | Designing the Payment Success Page**
 - inside ```src/Cart``` folder create ```PaymentSuccess.jsx```
 
-### **Git Push #145 | **
+### **Git Push #145 | Creating a New Order with Fetch API & createAsyncThunk**
+- in this project we have four features -> Product , User , Cart , Order .
+- inside ```features``` folder create another folder named ```order```
+- inside ```features/cart``` folder create ```orderSlice.js```
 
 ### **Git Push #146 | **
 
