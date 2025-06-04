@@ -500,9 +500,10 @@ https://www.postman.com/downloads/
 
 ### **Git Push #142 | Verify Payment with Razorpay**
 
-### **Git Push #143 | **
+### **Git Push #143 | Handler Function to Redirect on Successful Payment**
 
-### **Git Push #144 | **
+### **Git Push #144 | Designing the Payment Success Page**
+- inside ```src/Cart``` folder create ```PaymentSuccess.jsx```
 
 ### **Git Push #145 | **
 
