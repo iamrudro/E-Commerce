@@ -510,7 +510,7 @@ https://www.postman.com/downloads/
 - inside ```features``` folder create another folder named ```order```
 - inside ```features/cart``` folder create ```orderSlice.js```
 
-### **Git Push #146 | **
+### **Git Push #146 | Creating and Storing Order**
 
 ### **Git Push #147 | **
 
