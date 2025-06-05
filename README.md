@@ -512,7 +512,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #146 | Creating and Storing Order**
 
-### **Git Push #147 | **
+### **Git Push #147 | Clear Cart & Handle Order Success**
 
 ### **Git Push #148 | **
 
