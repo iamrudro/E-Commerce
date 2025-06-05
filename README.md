@@ -530,7 +530,7 @@ https://www.postman.com/downloads/
 ### **Git Push #151 | Creating the Order Details Page**
 - inside ```src/Orders``` folder create ```OrderDetails.jsx```
 
-### **Git Push #152 | **
+### **Git Push #152 | Access Order State & Render Data in UI**
 
 ### **Git Push #153 | **
 
