@@ -536,7 +536,9 @@ https://www.postman.com/downloads/
 
 ### **Git Push #154 | Working on Review onSubmit Event Handler**
 
-### **Git Push #155 | **
+### **Git Push #155 | Admin Dashboard Setup & Route Protection**
+- Inside ```src``` folder create a folder named ```Admin```
+- Then inside ```src/Admin``` create ```Dashboard.jsx```
 
 ### **Git Push #156 | **
 

@@ -21,6 +21,7 @@ import Payment from './Cart/Payment';
 import PaymentSuccess from './Cart/PaymentSuccess';
 import MyOrders from './Orders/MyOrders';
 import OrderDetails from './Orders/OrderDetails';
+import Dashboard from './Admin/Dashboard';
 
 const App = () => {
 
@@ -54,6 +55,9 @@ const App = () => {
         <Route path="/paymentSuccess" element={<ProtectedRoute element={<PaymentSuccess />} />} />
         <Route path="/orders/user" element={<ProtectedRoute element={<MyOrders />} />} />
         <Route path="/order/:orderId" element={<ProtectedRoute element={<OrderDetails />} />} />
+
+        {/* Admin Routes */}
+        <Route path="/admin/dashboard" element={<ProtectedRoute element={<Dashboard />} adminOnly={true} />} />
       </Routes>
       {isAuthenticated && <UserDashboard user={user} />}
     </Router>
