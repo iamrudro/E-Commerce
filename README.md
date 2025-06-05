@@ -527,7 +527,8 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 151 to 160</summary>
 
-### **Git Push #151 | ** 
+### **Git Push #151 | Creating the Order Details Page**
+- inside ```src/Orders``` folder create ```OrderDetails.jsx```
 
 ### **Git Push #152 | **
 
