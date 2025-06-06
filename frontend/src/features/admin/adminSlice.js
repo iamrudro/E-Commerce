@@ -13,6 +13,21 @@ export const fetchAdminProducts = createAsyncThunk('admin/fetchAdminProducts', a
 })
 
 
+// Create Products
+export const CreateProduct = createAsyncThunk('admin/CreateProduct', async ({ productData }, { rejectWithValue }) => {
+    try {
+        const config = {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        }
+        const { data } = await axios.post('/api/v1/admin/products/create', productData, config)
+        return data;
+    } catch (error) {
+        return rejectWithValue(error.response?.data || { message: 'Product Creation Failed' })
+    }
+})
+
 const adminSlice = createSlice({
     name: 'admin',
     initialState: {
@@ -30,6 +45,7 @@ const adminSlice = createSlice({
         }
     },
     extraReducers: (builder) => {
+        // Fetch all products CASE
         builder
             .addCase(fetchAdminProducts.pending, (state) => {
                 state.loading = true
@@ -42,6 +58,23 @@ const adminSlice = createSlice({
             .addCase(fetchAdminProducts.rejected, (state, action) => {
                 state.loading = false
                 state.error = action.payload?.message || 'Error while fetching the products'
+            })
+
+        // Create Product CASE
+        builder
+            .addCase(CreateProduct.pending, (state) => {
+                state.loading = true
+                state.error = null
+            })
+            .addCase(CreateProduct.fulfilled, (state, action) => {
+                state.loading = false
+                state.success = action.payload.success
+                state.products.push(action.payload.product)
+                console.log(state.products);
+            })
+            .addCase(CreateProduct.rejected, (state, action) => {
+                state.loading = false
+                state.error = action.payload?.message || 'Product Creation Failed'
             })
     }
 })

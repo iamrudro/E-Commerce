@@ -553,7 +553,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #159 | Working on Image State & Upload Handler**
 
-### **Git Push #160 | **
+### **Git Push #160 | Create Products with Fetch API**
 
 </details>
 
