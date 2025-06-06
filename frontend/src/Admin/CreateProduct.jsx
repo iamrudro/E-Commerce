@@ -12,6 +12,7 @@ function CreateProduct() {
     const [category, setCategory] = useState("");
     const [stock, setStock] = useState("");
     const [image, setImage] = useState([]);
+    const [imagePreview, setImagePreview] = useState([]);
 
     const categories = ['shirt', 'dress', 'TV']
     const createProductSubmit = (e) => {
@@ -24,6 +25,24 @@ function CreateProduct() {
         myForm.set('stock', stock);
         image.forEach((img) => {
             myForm.append("image", img)
+        })
+    }
+
+    const createProductImage = (e) => {
+        const files = Array.from(e.target.files);
+
+        setImage([]);
+        setImagePreview([]);
+
+        files.forEach((file) => {
+            const reader = new FileReader();
+            reader.onload = () => {
+                if (reader.readyState === 2) {
+                    setImagePreview((old) => [...old, reader.result]);
+                    setImage((old) => [...old, reader.result]);
+                }
+            }
+            reader.readAsDataURL(file)
         })
     }
 
@@ -91,11 +110,20 @@ function CreateProduct() {
                             accept='image/'
                             className='form-input-file'
                             multiple
-                            name="image" />
+                            name="image"
+                            onChange={createProductImage}
+                        />
                     </div>
 
                     <div className="image-preview-container">
-                        <img src="" alt="Product Preview" className='image-preview' key="1" />
+                        {imagePreview.map((img, index) => (
+                            <img
+                                src={img}
+                                alt="Product Preview"
+                                className='image-preview'
+                                key={index}
+                            />
+                        ))}
                     </div>
 
                     <button className="submit-btn">Create</button>
