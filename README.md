@@ -548,7 +548,8 @@ https://www.postman.com/downloads/
 ### **Git Push #157 | Creating Product List Table in Admin Dashboard**
 - Inside ```src/Admin``` create ```ProductList.jsx```
 
-### **Git Push #158 | **
+### **Git Push #158 | Create Product Form in Admin Panel**
+- Inside ```src/Admin``` create ```CreateProduct.jsx```
 
 ### **Git Push #159 | **
 
