@@ -545,7 +545,8 @@ https://www.postman.com/downloads/
 - inside ```features``` folder create another folder named ```admin```
 - inside ```features/admin``` folder create ```adminSlice.js```
 
-### **Git Push #157 | **
+### **Git Push #157 | Creating Product List Table in Admin Dashboard**
+- Inside ```src/Admin``` create ```ProductList.jsx```
 
 ### **Git Push #158 | **
 

@@ -3,7 +3,6 @@ import '../AdminStyles/Dashboard.css';
 import { AddBox, AttachMoney, CheckCircle, Dashboard as DashboardIcon, Error, Instagram, Inventory, LinkedIn, People, ShoppingCart, Star, YouTube } from '@mui/icons-material';
 import Navbar from '../components/Navbar';
 import PageTitle from '../components/PageTitle';
-import Loader from '../components/Loader';
 import { Link } from 'react-router-dom';
 
 function Dashboard() {

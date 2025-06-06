@@ -22,6 +22,7 @@ import PaymentSuccess from './Cart/PaymentSuccess';
 import MyOrders from './Orders/MyOrders';
 import OrderDetails from './Orders/OrderDetails';
 import Dashboard from './Admin/Dashboard';
+import ProductList from './Admin/ProductList';
 
 const App = () => {
 
@@ -58,6 +59,7 @@ const App = () => {
 
         {/* Admin Routes */}
         <Route path="/admin/dashboard" element={<ProtectedRoute element={<Dashboard />} adminOnly={true} />} />
+        <Route path="/admin/products" element={<ProtectedRoute element={<ProductList />} adminOnly={true} />} />
       </Routes>
       {isAuthenticated && <UserDashboard user={user} />}
     </Router>
