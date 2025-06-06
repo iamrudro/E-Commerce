@@ -540,7 +540,10 @@ https://www.postman.com/downloads/
 - Inside ```src``` folder create a folder named ```Admin```
 - Then inside ```src/Admin``` create ```Dashboard.jsx```
 
-### **Git Push #156 | **
+### **Git Push #156 | Working on adminSlice–Fetch Products API with Redux Toolkit**
+- in this project we have four features -> Product , User , Cart , Order , Admin .
+- inside ```features``` folder create another folder named ```admin```
+- inside ```features/admin``` folder create ```adminSlice.js```
 
 ### **Git Push #157 | **
 
