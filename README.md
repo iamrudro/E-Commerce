@@ -561,7 +561,7 @@ https://www.postman.com/downloads/
 <details>
 <summary>Git Push to 161 to 170</summary>
 
-### **Git Push #161 | ** 
+### **Git Push #161 | Access Redux State & Dispatch Actions to Create Products** 
 
 ### **Git Push #162 | **
 

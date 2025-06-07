@@ -6,7 +6,7 @@ const router = express.Router();
 // Routes
 router.route("/products").get(getAllProducts);
 
-router.route("/admin/products").get(verifyUserAuth, roleBasedAccess("admin"), getAdminProducts)
+router.route("/admin/products").get(verifyUserAuth, roleBasedAccess("admin"), getAdminProducts);
 
 router.route("/admin/products/create").post(verifyUserAuth, roleBasedAccess("admin"), createProducts);
 

@@ -14,7 +14,7 @@ export const fetchAdminProducts = createAsyncThunk('admin/fetchAdminProducts', a
 
 
 // Create Products
-export const CreateProduct = createAsyncThunk('admin/CreateProduct', async ({ productData }, { rejectWithValue }) => {
+export const createProduct = createAsyncThunk('admin/createProduct', async ({ productData }, { rejectWithValue }) => {
     try {
         const config = {
             headers: {
@@ -62,17 +62,17 @@ const adminSlice = createSlice({
 
         // Create Product CASE
         builder
-            .addCase(CreateProduct.pending, (state) => {
+            .addCase(createProduct.pending, (state) => {
                 state.loading = true
                 state.error = null
             })
-            .addCase(CreateProduct.fulfilled, (state, action) => {
+            .addCase(createProduct.fulfilled, (state, action) => {
                 state.loading = false
                 state.success = action.payload.success
                 state.products.push(action.payload.product)
                 console.log(state.products);
             })
-            .addCase(CreateProduct.rejected, (state, action) => {
+            .addCase(createProduct.rejected, (state, action) => {
                 state.loading = false
                 state.error = action.payload?.message || 'Product Creation Failed'
             })
