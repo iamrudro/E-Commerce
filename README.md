@@ -563,7 +563,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #161 | Access Redux State & Dispatch Actions to Create Products** 
 
-### **Git Push #162 | **
+### **Git Push #162 | Displaying Related Images for Product**
 
 ### **Git Push #163 | **
 
