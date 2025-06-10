@@ -14,7 +14,7 @@ export const fetchAdminProducts = createAsyncThunk('admin/fetchAdminProducts', a
 
 
 // Create Products
-export const createProduct = createAsyncThunk('admin/createProduct', async ({ productData }, { rejectWithValue }) => {
+export const createProduct = createAsyncThunk('admin/createProduct', async (productData, { rejectWithValue }) => {
     try {
         const config = {
             headers: {

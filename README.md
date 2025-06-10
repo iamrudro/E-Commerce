@@ -565,7 +565,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #162 | Displaying Related Images for Product**
 
-### **Git Push #163 | **
+### **Git Push #163 | Admin Updating Product–Backend Image Update**
 
 ### **Git Push #164 | **
 

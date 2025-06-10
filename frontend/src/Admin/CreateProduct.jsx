@@ -131,7 +131,7 @@ function CreateProduct() {
                     <div className="file-input-container">
                         <input
                             type="file"
-                            accept='image/'
+                            accept="image/"
                             className='form-input-file'
                             multiple
                             name="image"

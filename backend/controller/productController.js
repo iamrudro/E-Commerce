@@ -81,21 +81,46 @@ export const getAllProducts = handleAsyncError(async (req, res, next) => {
 
 // 3️⃣.Update Product
 export const updateProduct = handleAsyncError(async (req, res, next) => {
-    const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
-        runValidators: true
-    })
-    // console.log(req.params.id);
-    // let product = await Product.findById(req.params.id);
-    // console.log(product);
+    let product = await Product.findById(req.params.id)
     if (!product) {
         return next(new HandleError("Product is not found", 404))
     }
+
+    let images = [];
+    if (typeof req.body.image === "String") {
+        images.push(req.body.image)
+    } else if (Array.isArray(req.body.image)) {
+        images = req.body.image
+    }
+    if (images.length > 0) {
+        for (let i = 0; i < product.image.length; i++) {
+            await cloudinary.uploader.destroy(product.image[i].public_id)
+        }
+        // Upload new images
+        const imageLinks = [];
+        for (let i = 0; i < images.length; i++) {
+            const result = await cloudinary.uploader.upload(images[i], {
+                folder: 'products'
+            })
+            imageLinks.push({
+                public_id: result.public_id,
+                url: result.secure_url
+            })
+        }
+        req.body.image = imageLinks
+    }
+
+    product = await Product.findByIdAndUpdate(req.params.id, req.body, {
+        new: true,
+        runValidators: true
+    })
+
     res.status(200).json({
         success: true,
         product
     })
 })
+
 
 // 4️⃣.Delete Product
 export const deleteProduct = handleAsyncError(async (req, res, next) => {
