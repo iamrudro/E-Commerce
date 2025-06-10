@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../AdminStyles/UpdateProduct.css';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import PageTitle from '../components/PageTitle';
 import { toast } from 'react-toastify';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate, useParams } from 'react-router-dom';
+import { getProductDetails } from '../features/products/productSlice';
+import { removeErrors, removeSuccess, updateProduct } from '../features/admin/adminSlice';
 
 function UpdateProduct() {
 
@@ -12,11 +16,80 @@ function UpdateProduct() {
     const [description, setDescription] = useState("");
     const [category, setCategory] = useState("");
     const [stock, setStock] = useState("");
+    const [image, setImage] = useState([]);
     const [oldImage, setOldImage] = useState([]);
     const [imagePreview, setImagePreview] = useState([]);
 
+    const { product } = useSelector(state => state.product)
+    const { success, error, loading } = useSelector(state => state.admin)
+    console.log(product);
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const { updateId } = useParams();
+
 
     const categories = ["mobile", "fruits", "laptop", "shirt", "shoes", "pants", "glass", "watch", "cookies", "Pomegranate", "socks", "bag", "mouse", "headphone", "bucket", "bangle", "ring", "lcd", "jacket", "tops"];
+
+
+    useEffect(() => {
+        dispatch(getProductDetails(updateId))
+    }, [dispatch, updateId])
+
+    useEffect(() => {
+        if (product) {
+            setName(product.name)
+            setPrice(product.price)
+            setDescription(product.description)
+            setCategory(product.category)
+            setStock(product.stock)
+            setOldImage(product.image)
+        }
+    }, [product])
+
+    const handleImageChange = (e) => {
+        const files = Array.from(e.target.files);
+
+        setImage([]);
+        setImagePreview([]);
+
+        files.forEach((file) => {
+            const reader = new FileReader();
+            reader.onload = () => {
+                if (reader.readyState === 2) {
+                    setImagePreview((old) => [...old, reader.result]);
+                    setImage((old) => [...old, reader.result]);
+                }
+            }
+            reader.readAsDataURL(file)
+        })
+    }
+
+    const updateProductSubmit = (e) => {
+        e.preventDefault();
+        const myForm = new FormData();
+        myForm.set('name', name);
+        myForm.set('price', price);
+        myForm.set('description', description);
+        myForm.set('category', category);
+        myForm.set('stock', stock);
+        image.forEach((img) => {
+            myForm.append("image", img)
+        })
+        dispatch(updateProduct({ id: updateId, formData: myForm }))
+    }
+
+    useEffect(() => {
+        if (success) {
+            toast.success("Product Updated Successfully", { position: 'top-center', autoClose: 3000 })
+            dispatch(removeSuccess())
+            navigate('/admin/products')
+        }
+        if (error) {
+            toast.error(error, { position: 'top-center', autoClose: 3000 })
+            dispatch(removeErrors())
+        }
+    }, [dispatch, error, success])
 
 
     return (
@@ -25,7 +98,7 @@ function UpdateProduct() {
             <Navbar />
             <div className="update-product-wrapper">
                 <h1 className="update-product-title">Update Product</h1>
-                <form className="update-product-form" encType='multipart/form-date'>
+                <form className="update-product-form" encType='multipart/form-date' onSubmit={updateProductSubmit}>
 
                     <label htmlFor="name">Product Name</label>
                     <input
@@ -87,7 +160,14 @@ function UpdateProduct() {
 
                     <label htmlFor="image">Product Images</label>
                     <div className="update-product-file-wrapper">
-                        <input type="file" name="image" accept="image/" multiple className='update-product-file-input' />
+                        <input
+                            type="file"
+                            name="image"
+                            accept="image/"
+                            multiple
+                            className='update-product-file-input'
+                            onChange={handleImageChange}
+                        />
                     </div>
                     <div className="update-product-preview-wrapper">
                         {imagePreview.map((img, index) => (
@@ -100,7 +180,7 @@ function UpdateProduct() {
                         ))}
                     </div>
 
-                    <button className="update-product-submit-btn">Update</button>
+                    <button className="update-product-submit-btn">{loading ? 'Updating...' : 'Update'}</button>
                 </form>
             </div>
             <Footer />

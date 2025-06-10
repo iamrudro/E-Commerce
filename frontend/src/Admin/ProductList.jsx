@@ -57,20 +57,21 @@ function ProductList() {
                             </tr>
                         </thead>
                         <tbody>
-                            {products.map((product, index) => (<tr key={product._id}>
-                                <td>{index + 1}</td>
-                                <td><img src={product.image[0].url} alt={product.name} className='admin-product-image' /></td>
-                                <td>{product.name}</td>
-                                <td>Rs.{product.price}</td>
-                                <td>{product.ratings}</td>
-                                <td>{product.category}</td>
-                                <td>{product.stock}</td>
-                                <td>{new Date(product.createdAt).toLocaleString()}</td>
-                                <td>
-                                    <Link to={`/admin/product/${product._id}`} className='action-icon edit-icon'><Edit /></Link>
-                                    <Link to={`/admin/product/${product._id}`} className='action-icon delete-icon'><Delete /></Link>
-                                </td>
-                            </tr>
+                            {products.map((product, index) => (
+                                <tr key={product._id}>
+                                    <td>{index + 1}</td>
+                                    <td><img src={product.image[0].url} alt={product.name} className='admin-product-image' /></td>
+                                    <td>{product.name}</td>
+                                    <td>Rs.{product.price}</td>
+                                    <td>{product.ratings}</td>
+                                    <td>{product.category}</td>
+                                    <td>{product.stock}</td>
+                                    <td>{new Date(product.createdAt).toLocaleString()}</td>
+                                    <td>
+                                        <Link to={`/admin/product/${product._id}`} className='action-icon edit-icon'><Edit /></Link>
+                                        <Link to={`/admin/product/${product._id}`} className='action-icon delete-icon'><Delete /></Link>
+                                    </td>
+                                </tr>
                             ))}
                         </tbody>
                     </table>

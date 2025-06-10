@@ -572,7 +572,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #165 | Update Product with Fetch API**
 
-### **Git Push #166 | **
+### **Git Push #166 | Dispatch Update Product Action**
 
 ### **Git Push #167 | **
 
