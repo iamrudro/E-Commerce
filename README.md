@@ -567,7 +567,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #163 | Admin Updating Product–Backend Image Update**
 
-### **Git Push #164 | **
+### **Git Push #164 | Update Product Form–Static Structure**
+- inside ```src/Admin``` create ```UpdateProduct.jsx```
 
 ### **Git Push #165 | **
 

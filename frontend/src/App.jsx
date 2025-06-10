@@ -24,6 +24,7 @@ import OrderDetails from './Orders/OrderDetails';
 import Dashboard from './Admin/Dashboard';
 import ProductList from './Admin/ProductList';
 import CreateProduct from './Admin/CreateProduct';
+import UpdateProduct from './Admin/UpdateProduct';
 
 const App = () => {
 
@@ -62,6 +63,7 @@ const App = () => {
         <Route path="/admin/dashboard" element={<ProtectedRoute element={<Dashboard />} adminOnly={true} />} />
         <Route path="/admin/products" element={<ProtectedRoute element={<ProductList />} adminOnly={true} />} />
         <Route path="/admin/products/create" element={<ProtectedRoute element={<CreateProduct />} adminOnly={true} />} />
+        <Route path="/admin/product/:updateId" element={<ProtectedRoute element={<UpdateProduct />} adminOnly={true} />} />
       </Routes>
       {isAuthenticated && <UserDashboard user={user} />}
     </Router>
