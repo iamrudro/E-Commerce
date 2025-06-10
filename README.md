@@ -570,7 +570,7 @@ https://www.postman.com/downloads/
 ### **Git Push #164 | Update Product Form–Static Structure**
 - inside ```src/Admin``` create ```UpdateProduct.jsx```
 
-### **Git Push #165 | **
+### **Git Push #165 | Update Product with Fetch API**
 
 ### **Git Push #166 | **
 
