@@ -78,10 +78,10 @@ export const getSingleUser = createAsyncThunk('admin/getSingleUser', async (id, 
 // Update User Role
 export const updateUserRole = createAsyncThunk('admin/updateUserRole', async ({ userId, role }, { rejectWithValue }) => {
     try {
-        const { data } = await axios.put(`/api/v1/admin/user/${userId}`, role)
+        const { data } = await axios.put(`/api/v1/admin/user/${userId}`, {role})
         return data;
     } catch (error) {
-        return rejectWithValue(error.response?.data || { message: "Failed to User Role" })
+        return rejectWithValue(error.response?.data || { message: "Failed to Update User Role" })
     }
 })
 
