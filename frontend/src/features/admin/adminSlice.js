@@ -64,7 +64,7 @@ const adminSlice = createSlice({
         loading: false,
         error: null,
         product: {},
-        deleteLoading: false
+        deleting: {}
     },
     reducers: {
         removeErrors: (state) => {
@@ -127,16 +127,18 @@ const adminSlice = createSlice({
 
         // Delete Product CASE
         builder
-            .addCase(deleteProduct.pending, (state) => {
-                state.deleteLoading = true
-                state.error = null
+            .addCase(deleteProduct.pending, (state,action) => {
+                const productId = action.meta.arg;
+                state.deleting[productId] = true;
             })
             .addCase(deleteProduct.fulfilled, (state, action) => {
-                state.deleteLoading = false
-                state.products = state.products.filter(product => product._id !== action.payload.productId)
+                const productId = action.payload.productId
+                state.deleting[productId] = false;
+                state.products = state.products.filter(product => product._id !== productId)
             })
             .addCase(deleteProduct.rejected, (state, action) => {
-                state.deleteLoading = false
+                const productId = action.meta.arg;
+                state.deleting[productId] = false;
                 state.error = action.payload?.message || 'Product Deletion Failed'
             })
     }

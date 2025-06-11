@@ -576,7 +576,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #167 | Working on Deleting Products–API Integration**
 
-### **Git Push #168 | **
+### **Git Push #168 | Delete Products from Admin Panel**
 
 ### **Git Push #169 | **
 

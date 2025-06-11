@@ -24,7 +24,7 @@ function Products() {
     const pageFromURL = parseInt(searchParams.get("page"), 10) || 1
     const [currentPage, setCurrentPage] = useState(pageFromURL);
     const navigate = useNavigate();
-    const categories = ["laptop", "mobile", "televison", "fruits", "glass", "shirt", "dresses"]
+    const categories = ["mobile", "fruits", "laptop", "shirt", "shoes", "pants", "glass", "watch", "cookies", "Pomegranate", "socks", "bag", "mouse", "headphone", "bucket", "bangle", "ring", "lcd", "jacket", "tops"];
 
     useEffect(() => {
         dispatch(getProduct({ keyword, page: currentPage, category }))
