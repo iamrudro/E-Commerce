@@ -590,7 +590,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #171 | Get Single User for Update–API Integration** 
 
-### **Git Push #172 | **
+### **Git Push #172 | Update Role Component**
+- inside ```src/Admin``` create ```UpdateRole.jsx```
 
 ### **Git Push #173 | **
 
