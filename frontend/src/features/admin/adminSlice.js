@@ -75,6 +75,16 @@ export const getSingleUser = createAsyncThunk('admin/getSingleUser', async (id, 
     }
 })
 
+// Update User Role
+export const updateUserRole = createAsyncThunk('admin/updateUserRole', async ({ userId, role }, { rejectWithValue }) => {
+    try {
+        const { data } = await axios.put(`/api/v1/admin/user/${userId}`, role)
+        return data;
+    } catch (error) {
+        return rejectWithValue(error.response?.data || { message: "Failed to User Role" })
+    }
+})
+
 
 const adminSlice = createSlice({
     name: 'admin',
@@ -193,6 +203,21 @@ const adminSlice = createSlice({
             .addCase(getSingleUser.rejected, (state, action) => {
                 state.loading = false
                 state.error = action.payload?.message || 'Failed to Single Users'
+            })
+
+        // Update User role CASE
+        builder
+            .addCase(updateUserRole.pending, (state) => {
+                state.loading = true
+                state.error = null
+            })
+            .addCase(updateUserRole.fulfilled, (state, action) => {
+                state.loading = false
+                state.success = action.payload.success
+            })
+            .addCase(updateUserRole.rejected, (state, action) => {
+                state.loading = false
+                state.error = action.payload?.message || 'Failed to Update User Role'
             })
     }
 })

@@ -593,7 +593,7 @@ https://www.postman.com/downloads/
 ### **Git Push #172 | Update Role Component**
 - inside ```src/Admin``` create ```UpdateRole.jsx```
 
-### **Git Push #173 | **
+### **Git Push #173 | Update User Role–Fetch API Integration**
 
 ### **Git Push #174 | **
 
