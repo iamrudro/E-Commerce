@@ -574,7 +574,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #166 | Dispatch Update Product Action**
 
-### **Git Push #167 | **
+### **Git Push #167 | Working on Deleting Products–API Integration**
 
 ### **Git Push #168 | **
 
