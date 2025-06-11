@@ -580,7 +580,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #169 | Working on Fetching Users–API Integration**
 
-### **Git Push #170 | **
+### **Git Push #170 | Display Users List in Admin Dashboard**
+- inside ```src/Admin``` create ```UsersList.jsx```
 
 </details>
 
