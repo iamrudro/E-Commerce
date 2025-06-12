@@ -7,24 +7,17 @@ import Loader from '../components/Loader';
 import { Link } from 'react-router-dom';
 import { Delete, Edit } from '@mui/icons-material';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchAllOrders, removeErrors } from '../features/admin/adminSlice';
+import { clearMessage, deleteOrder, fetchAllOrders, removeErrors, removeSuccess } from '../features/admin/adminSlice';
 import { toast } from 'react-toastify';
 
 function OrdersList() {
-    const { orders, loading, error } = useSelector(state => state.admin)
+    const { orders, loading, error, success, message } = useSelector(state => state.admin)
     console.log(orders);
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(fetchAllOrders())
     }, [dispatch])
-
-    useEffect(() => {
-        if (error) {
-            toast.error(error, { position: 'top-center', autoClose: 3000 });
-            dispatch(removeErrors())
-        }
-    }, [dispatch, error])
 
     if (orders && orders.length === 0) {
         return (
@@ -33,6 +26,26 @@ function OrdersList() {
             </div>
         )
     }
+
+    const handleDelete = (id) => {
+        const confirm = window.confirm("Are you sure you want to Delete this order?");
+        if (confirm) {
+            dispatch(deleteOrder(id))
+        }
+    }
+
+    useEffect(() => {
+        if (error) {
+            toast.error(error, { position: 'top-center', autoClose: 3000 });
+            dispatch(removeErrors())
+        }
+        if (success) {
+            toast.success(message, { position: 'top-center', autoClose: 3000 });
+            dispatch(removeSuccess());
+            dispatch(clearMessage());
+            dispatch(fetchAllOrders());
+        }
+    }, [dispatch, error, success, message])
 
     return (
         <>
@@ -64,7 +77,7 @@ function OrdersList() {
                                         <td>
                                             <Link to={`/admin/order/${order._id}`} className='action-icon edit-icon'><Edit /></Link>
 
-                                            <button className="action-btn delete-icon"><Delete /></button>
+                                            <button className="action-btn delete-icon" onClick={() => handleDelete(order._id)}><Delete /></button>
                                         </td>
                                     </tr>
                                 ))}

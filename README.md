@@ -608,7 +608,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #179 | Deleting Order–Fetch API Integration**
 
-### **Git Push #180 | **
+### **Git Push #180 | Dispatch Action and Delete Orders**
 
 </details>
 
@@ -631,12 +631,12 @@ https://www.postman.com/downloads/
 
 ### **Git Push #188 | **
 
-### **Git Push #189 | **
+### **Git Push #189 | --**
 
-### **Git Push #190 | **
+### **Git Push #190 | --**
 
-### **Git Push #191 | **
+### **Git Push #191 | --**
 
-### **Git Push #192 | **
+### **Git Push #192 | --**
 
 </details>
