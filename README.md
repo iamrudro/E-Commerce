@@ -599,7 +599,7 @@ https://www.postman.com/downloads/
 
 ### **Git Push #175 | Working on Deleting User–API Integration**
 
-### **Git Push #176 | **
+### **Git Push #176 | Delete User from Admin Panel**
 
 ### **Git Push #177 | **
 
