@@ -606,7 +606,7 @@ https://www.postman.com/downloads/
 ### **Git Push #178 | Display All Orders in Admin Dashboard**
 - inside ```src/Admin``` create ```OrdersList.jsx```
 
-### **Git Push #179 | **
+### **Git Push #179 | Deleting Order–Fetch API Integration**
 
 ### **Git Push #180 | **
 
