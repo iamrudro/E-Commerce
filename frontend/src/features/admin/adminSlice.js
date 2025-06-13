@@ -136,7 +136,7 @@ export const updateOrderStatus = createAsyncThunk('admin/updateOrderStatus', asy
 // Fetch All Reviews
 export const fetchProductReviews = createAsyncThunk('admin/fetchProductReviews', async (productId, { rejectWithValue }) => {
     try {
-        const { data } = await axios.get(`/api/v1/reviews?id=${productId}`)
+        const { data } = await axios.get(`/api/v1/admin/reviews?id=${productId}`)
         return data;
     } catch (error) {
         return rejectWithValue(error.response?.data || { message: "Failed to fetch product reviews" })
