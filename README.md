@@ -620,7 +620,7 @@ https://www.postman.com/downloads/
 ### **Git Push #182 | Fetch Order Details–API Integration**
 - inside ```src/Admin``` create ```UpdateOrder.jsx```
 
-### **Git Push #183 | **
+### **Git Push #183 | Dispatch Update Status Action**
 
 ### **Git Push #184 | **
 
