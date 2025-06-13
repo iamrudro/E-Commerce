@@ -629,16 +629,8 @@ https://www.postman.com/downloads/
 
 ### **Git Push #186 | Dispatch Fetch Reviews Action**
 
-### **Git Push #187 | **
+### **Git Push #187 | Delete Product Reviews–Fetch API and Dispatch Action**
 
 ### **Git Push #188 | **
-
-### **Git Push #189 | --**
-
-### **Git Push #190 | --**
-
-### **Git Push #191 | --**
-
-### **Git Push #192 | --**
 
 </details>
