@@ -627,7 +627,7 @@ https://www.postman.com/downloads/
 ### **Git Push #185 | Working on Review List-Fetch Admin Products**
 - inside ```src/Admin``` create ```ReviewsList.jsx```
 
-### **Git Push #186 | **
+### **Git Push #186 | Dispatch Fetch Reviews Action**
 
 ### **Git Push #187 | **
 

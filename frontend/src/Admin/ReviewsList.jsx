@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../AdminStyles/ReviewsList.css';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
@@ -6,11 +6,13 @@ import PageTitle from '../components/PageTitle';
 import Loader from '../components/Loader';
 import { Delete } from '@mui/icons-material';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchAdminProducts, removeErrors } from '../features/admin/adminSlice';
+import { fetchAdminProducts, fetchProductReviews, removeErrors } from '../features/admin/adminSlice';
 import { toast } from 'react-toastify';
 
 function ReviewsList() {
-    const { products, loading, error } = useSelector(state => state.admin)
+    const { products, loading, error, reviews } = useSelector(state => state.admin);
+    console.log(reviews);
+    const [selectedProduct, setSelectedProduct] = useState(null);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -24,6 +26,13 @@ function ReviewsList() {
         }
     }, [dispatch, error])
 
+
+    const handleViewReviews = (productId) => {
+        setSelectedProduct(productId);
+        dispatch(fetchProductReviews(productId))
+    }
+
+
     if (!products || products.length === 0) {
         return (
             <div className="reviews-list-container">
@@ -32,7 +41,6 @@ function ReviewsList() {
             </div>
         )
     }
-
 
     return (
         <>
@@ -59,14 +67,16 @@ function ReviewsList() {
                                     <td><img src={product.image[0].url} alt={product.name} width="100" height="100" /></td>
                                     <td>{product.numberOfReviews}</td>
                                     <td>
-                                        <button className="action-btn view-btn">View Reviews</button>
+                                        {product.numberOfReviews > 0 &&
+                                            (<button className="action-btn view-btn" onClick={() => handleViewReviews(product._id)}>View Reviews</button>)
+                                        }
                                     </td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
 
-                    <div className="reviews-details">
+                    {selectedProduct && reviews && reviews.length > 0 && (<div className="reviews-details">
                         <h2>Reviews for Product</h2>
                         <table className="reviews-table">
                             <thead>
@@ -79,18 +89,20 @@ function ReviewsList() {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>4354</td>
-                                    <td>4354</td>
-                                    <td>4354</td>
-                                    <td>4354</td>
-                                    <td>
-                                        <button className="action-btn delete-btn"><Delete /></button>
-                                    </td>
-                                </tr>
+                                {reviews.map((review, index) => (
+                                    <tr key={review._id}>
+                                        <td>{index + 1}</td>
+                                        <td>{review.name}</td>
+                                        <td>{review.rating}</td>
+                                        <td>{review.comment}</td>
+                                        <td>
+                                            <button className="action-btn delete-btn"><Delete /></button>
+                                        </td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
-                    </div>
+                    </div>)}
                 </div>
                 <Footer />
             </>)}
