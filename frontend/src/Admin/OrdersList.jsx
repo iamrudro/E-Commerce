@@ -41,9 +41,9 @@ function OrdersList() {
         }
         if (success) {
             toast.success(message, { position: 'top-center', autoClose: 3000 });
-            dispatch(removeSuccess());
-            dispatch(clearMessage());
-            dispatch(fetchAllOrders());
+            dispatch(removeSuccess())
+            dispatch(clearMessage())
+            dispatch(fetchAllOrders())
         }
     }, [dispatch, error, success, message])
 
