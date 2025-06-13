@@ -631,6 +631,6 @@ https://www.postman.com/downloads/
 
 ### **Git Push #187 | Delete Product Reviews–Fetch API and Dispatch Action**
 
-### **Git Push #188 | **
+### **Git Push #188 | Calculation of Dynamic Data**
 
 </details>
