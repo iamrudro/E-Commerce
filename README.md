@@ -1,15 +1,10 @@
-<p align="center">
-  <img src="https://your-image-url.com/logo.png" width="150" alt="E-Commerce Logo">
-</p>
-
 <h1 align="center">MERN E-Commerce Application</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Current%20Version-1.0.0-brightgreen">
-  <img src="https://img.shields.io/badge/Made%20in-Python3-blue">
+  <img src="https://img.shields.io/badge/Made%20in-React-blue">
   <img src="https://img.shields.io/badge/License-GPL%20v3-yellow">
   <img src="https://img.shields.io/badge/Run%20Tests-passing-brightgreen">
-  <img src="https://img.shields.io/badge/lines%20of%20code-1.5K-pink">
 </p>
 
 
@@ -18,6 +13,11 @@
 ```bash
 git clone <https://github.com/iamrudro/E-Commerce.git>
 ```
+
+<details>
+<summary>Git Push Records</summary>
+
+
 <details>
 <summary>Git Push to 10</summary>
 
@@ -632,5 +632,7 @@ https://www.postman.com/downloads/
 ### **Git Push #187 | Delete Product Reviews–Fetch API and Dispatch Action**
 
 ### **Git Push #188 | Calculation of Dynamic Data**
+
+</details>
 
 </details>
