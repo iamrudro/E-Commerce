@@ -14,6 +14,9 @@
 git clone <https://github.com/iamrudro/E-Commerce.git>
 ```
 
+<h4>This MERN stack e-commerce project is built using MongoDB, ExpressJS, ReactJS, and NodeJS, with modern state management implemented through Redux Toolkit. Key features include secure user authentication and authorization with JWT, password hashing, and email functionality powered by Nodemailer. Razorpay is integrated for seamless payment processing, while Cloudinary is used for efficient image uploads. APIs are rigorously tested using Postman to ensure reliability. This project encompasses a wide range of modern web development techniques, making it an excellent resource for learning and academic purposes.</h4>
+
+
 <details>
 <summary>Git Push Records</summary>
 
