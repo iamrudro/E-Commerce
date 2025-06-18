@@ -1,4 +1,4 @@
-<h1 align="center">MERN E-Commerce Application</h1>
+<h1 align="center">🛒 MERN E-Commerce Application</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Current%20Version-1.0.0-brightgreen">
@@ -7,14 +7,92 @@
   <img src="https://img.shields.io/badge/Run%20Tests-passing-brightgreen">
 </p>
 
+---
 
-*Create and Clone the GitHub Repository*
+## 📦 Installation
 
 ```bash
 git clone <https://github.com/iamrudro/E-Commerce.git>
 ```
 
-<h4>This MERN stack e-commerce project is built using MongoDB, ExpressJS, ReactJS, and NodeJS, with modern state management implemented through Redux Toolkit. Key features include secure user authentication and authorization with JWT, password hashing, and email functionality powered by Nodemailer. Razorpay is integrated for seamless payment processing, while Cloudinary is used for efficient image uploads. APIs are rigorously tested using Postman to ensure reliability. This project encompasses a wide range of modern web development techniques, making it an excellent resource for learning and academic purposes.</h4>
+---
+
+
+This MERN stack e-commerce project is built using **MongoDB, ExpressJS, ReactJS, and NodeJS**, with modern state management implemented through **Redux Toolkit**. It features secure user authentication with **JWT**, email support via **Nodemailer**, seamless payments through **Razorpay**, and image uploads using **Cloudinary**. API endpoints are tested thoroughly using **Postman** to ensure robustness and reliability.
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend**: ReactJS, Redux Toolkit, Tailwind CSS (if used)
+- **Backend**: NodeJS, ExpressJS
+- **Database**: MongoDB (Mongoose)
+- **Authentication**: JWT, bcrypt
+- **Email Service**: Nodemailer
+- **Payments**: Razorpay
+- **File Uploads**: Cloudinary
+- **API Testing**: Postman
+
+---
+
+## ✨ Features
+
+- ✅ User Registration & Login (JWT-based)
+- ✅ Admin & Role-based Access
+- ✅ Product Listings with Filtering & Sorting
+- ✅ Cart and Wishlist Functionality
+- ✅ Razorpay Payment Integration
+- ✅ Order History & Tracking
+- ✅ Profile Management
+- ✅ Cloudinary Image Uploads
+- ✅ Email Notifications
+- ✅ Responsive UI
+
+---
+
+## 📸 Screenshots
+
+### Home & Trending Now  
+Showcases the homepage with banner and featured products.  
+![Home & Trending Now](E-Comm SS\SS1.png)
+
+### Product List & Filters  
+Browse products by category with pagination.  
+![Product Listing](E-Comm SS\SS3.png)
+
+### Product Details  
+View individual product details, reviews, and add to cart.  
+![Product Details]()  
+![Product Details Continued]()
+
+### Cart & Price Summary  
+Review cart items, update quantities, and check price breakdown.  
+![Cart & Checkout]()  
+![Cart & Checkout Continued]()
+
+### Shipping & Order Flow  
+Enter shipping details, confirm order, and proceed to payment.  
+![Shipping Details]()  
+![Order Confirmation]()
+
+### Order History  
+Check past orders with status indicators and details link.  
+![Order History & Details]()
+
+---
+
+## 🧑‍💻 Author
+
+GitHub: [@iamrudro](https://github.com/iamrudro)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+
+---
 
 
 <details>
