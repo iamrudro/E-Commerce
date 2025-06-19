@@ -54,10 +54,8 @@ This MERN stack e-commerce project is built using **MongoDB, ExpressJS, ReactJS,
 
 ### Home & Trending Now  
 Showcases the homepage with banner and featured products.  
-<div class="image-container">    
-    <a href="">    
-      <img src="" alt="home&trending" width="500" height="300">    
-    </a>
+<div class="image-container">
+      <img alt="home&trending" src="https://github.com/user-attachments/assets/43d3ce95-5996-451e-b68a-43939ec50889" width="500" height="300"/>    
 </div>
 
 ### Product List & Filters  
