@@ -55,54 +55,48 @@ This MERN stack e-commerce project is built using **MongoDB, ExpressJS, ReactJS,
 ### Home & Trending Now  
 Showcases the homepage with banner and featured products.  
 <div class="image-container">
-      <img alt="home&trending" src="https://github.com/user-attachments/assets/43d3ce95-5996-451e-b68a-43939ec50889" width="500" height="300"/>    
+      <img alt="home&trending" src="https://github.com/user-attachments/assets/43d3ce95-5996-451e-b68a-43939ec50889" width="500" height="300"/>
+      <img alt="home&trending" src="https://github.com/user-attachments/assets/b3a97dec-73a6-4880-b2e9-65623be9f729" width="500" height="300"/>
 </div>
 
 ### Product List & Filters  
 Browse products by category with pagination.  
-<div class="image-container">    
-    <a href="">    
-      <img src="" alt="home&trending" width="500" height="300">    
-    </a>
+<div class="image-container">
+  <img alt="products page" src="https://github.com/user-attachments/assets/6151e72f-5649-4993-878d-58ea41a79f62" width="500" height="300"/>
 </div>
 
 ### Product Details  
 View individual product details, reviews, and add to cart.  
 <div class="image-container">    
-    <a href="">    
-      <img src="" alt="home&trending" width="500" height="300">    
-      <img src="" alt="home&trending" width="500" height="300">    
-    </a>
+  <img alt="productdetails" src="https://github.com/user-attachments/assets/a2737bbc-a88e-4541-9078-1e69e2af288e" width="500" height="300"/>
 </div>
 
 ### Cart & Price Summary  
 Review cart items, update quantities, and check price breakdown.  
 <div class="image-container">    
-    <a href="">    
-      <img src="" alt="home&trending" width="500" height="300">    
-      <img src="" alt="home&trending" width="500" height="300">    
-    </a>
+  <img alt="Order Cart" src="https://github.com/user-attachments/assets/979b2ccc-45ed-4746-be1e-06f96ea969de" width="500" height="300"/>
 </div>
 
 ### Shipping & Order Flow  
 Enter shipping details, confirm order, and proceed to payment.  
 <div class="image-container">    
-    <a href="">    
-      <img src="" alt="home&trending" width="500" height="300">    
-    </a>
-</div>
-<div class="image-container">    
-    <a href="">    
-      <img src="" alt="home&trending" width="500" height="300">    
-    </a>
+  <img alt="shipping" src="https://github.com/user-attachments/assets/eb404f8b-3fc7-48cd-b316-0d53e6eceb69" width="500" height="300"/>
+    <img alt="orderflow" src="https://github.com/user-attachments/assets/5df98ece-162c-4db6-945f-10d4ff748d99" width="500" height="300"/>
 </div>
 
 ### Order History  
 Check past orders with status indicators and details link.  
 <div class="image-container">    
-    <a href="">    
-      <img src="" alt="home&trending" width="500" height="300">    
-    </a>
+  <img alt="myOrders" src="https://github.com/user-attachments/assets/6505ecdc-c031-4b1a-9cdc-7696a05cb803" width="500" height="300"/>
+  <img alt="myOrdersDetails" src="https://github.com/user-attachments/assets/75cfddf7-31fc-4cb9-99f8-6a08f85cb69b" width="500" height="300"/>
+</div>
+
+### Admin Dashboard
+Enabling administrators to efficiently manage products, orders, customers, and analytics on the ecommerce website.
+<div class="image-container">    
+    <img alt="aminDash" src="https://github.com/user-attachments/assets/3fb13fcd-3551-42ca-8a66-5bcc745a8e79" width="500" height="300"/>
+    <img alt="adminOrders" src="https://github.com/user-attachments/assets/0ceb999a-998a-4f40-b1a7-d00c371c7982" width="500" height="300"/>
+    <img alt="adminProducts" src="https://github.com/user-attachments/assets/112be3c3-bcfa-409c-9f8a-8abc13a0c2f3" width="500" height="300"/>
 </div>
 
 ---
