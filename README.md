@@ -54,30 +54,58 @@ This MERN stack e-commerce project is built using **MongoDB, ExpressJS, ReactJS,
 
 ### Home & Trending Now  
 Showcases the homepage with banner and featured products.  
-![Home & Trending Now](E-Comm SS\SS1.png)
+<div class="image-container">    
+    <a href="">    
+      <img src="" alt="home&trending" width="500" height="300">    
+    </a>
+</div>
 
 ### Product List & Filters  
 Browse products by category with pagination.  
-![Product Listing](E-Comm SS\SS3.png)
+<div class="image-container">    
+    <a href="">    
+      <img src="" alt="home&trending" width="500" height="300">    
+    </a>
+</div>
 
 ### Product Details  
 View individual product details, reviews, and add to cart.  
-![Product Details]()  
-![Product Details Continued]()
+<div class="image-container">    
+    <a href="">    
+      <img src="" alt="home&trending" width="500" height="300">    
+      <img src="" alt="home&trending" width="500" height="300">    
+    </a>
+</div>
 
 ### Cart & Price Summary  
 Review cart items, update quantities, and check price breakdown.  
-![Cart & Checkout]()  
-![Cart & Checkout Continued]()
+<div class="image-container">    
+    <a href="">    
+      <img src="" alt="home&trending" width="500" height="300">    
+      <img src="" alt="home&trending" width="500" height="300">    
+    </a>
+</div>
 
 ### Shipping & Order Flow  
 Enter shipping details, confirm order, and proceed to payment.  
-![Shipping Details]()  
-![Order Confirmation]()
+<div class="image-container">    
+    <a href="">    
+      <img src="" alt="home&trending" width="500" height="300">    
+    </a>
+</div>
+<div class="image-container">    
+    <a href="">    
+      <img src="" alt="home&trending" width="500" height="300">    
+    </a>
+</div>
 
 ### Order History  
 Check past orders with status indicators and details link.  
-![Order History & Details]()
+<div class="image-container">    
+    <a href="">    
+      <img src="" alt="home&trending" width="500" height="300">    
+    </a>
+</div>
 
 ---
 
