@@ -24,7 +24,7 @@ This MERN stack e-commerce project is built using **MongoDB, ExpressJS, ReactJS,
 
 ## 🚀 Tech Stack
 
-- **Frontend**: ReactJS, Redux Toolkit, Tailwind CSS (if used)
+- **Frontend**: ReactJS, Redux Toolkit, Tailwind CSS
 - **Backend**: NodeJS, ExpressJS
 - **Database**: MongoDB (Mongoose)
 - **Authentication**: JWT, bcrypt
